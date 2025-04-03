@@ -109,3 +109,25 @@
 // } else {
 // 	alert('Xatolik! Siz son kiritishingiz alertga')
 // }
+
+
+
+// 3 - masala 
+
+// let x = prompt('x: ')
+// let y = prompt('y: ')
+// let z = prompt('z: ')
+
+// if (x + y + z > x * y * z) {
+// 	alert('x+y+z')
+// } else if (x + y + z < x * y * z) {
+// 	alert('x*y*z')
+// }
+
+// if ((x + y + z) ** 2 / 2 > x * y * z) {
+// 	alert('x+y+z')
+// } else if ((x + y + z) ** 2 / 2 < x * y * z) {
+// 	alert('x*y*z')
+// }
+
+
