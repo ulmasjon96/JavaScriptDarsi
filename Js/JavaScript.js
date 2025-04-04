@@ -110,9 +110,7 @@
 // 	alert('Xatolik! Siz son kiritishingiz alertga')
 // }
 
-
-
-// 3 - masala 
+// 3 - masala
 
 // let x = prompt('x: ')
 // let y = prompt('y: ')
@@ -131,3 +129,55 @@
 // }
 
 
+
+
+// 5 - masala
+
+// // a, b, c haqiqiy sonlar kiritilsin
+// let a = +prompt("a sonini kiriting:");
+// let b = +prompt("b sonini kiriting:");
+// let c = +prompt("c sonini kiriting:");
+
+// // Tengsizlikni tekshirish: a >= b >= c
+// if (a >= b && b >= c) {
+//     // Agar tengsizlikni qanoatlantirsa, qiymatlarni 2 marta orttirish
+//     a *= 2;
+//     b *= 2;
+//     c *= 2;
+// } else {
+//     // Agar tengsizlikni qanoatlantirmasa, har bir sonning absolyut qiymatini olish
+//     a = a;
+//     b = b;
+//     c = c;
+// }
+
+// // Natijani chiqarish
+// alert(`Natija: a = ${a}, b = ${b}, c = ${c}`);
+
+// 6 - masala 
+
+// let x = +prompt(`x Sonlarni Kiriting: `)
+// let y = +prompt(`y Sonlarni Kiriting: `)
+// if(x>y){
+//     alert("z=x-y")
+// }else{
+//     alert("y-x+1")
+// }
+
+
+// 7 - masala
+
+
+// Foydalanuvchidan ikkita haqiqiy sonni olish
+let a = prompt("Birinchi sonni kiriting:");
+let b = prompt("Ikkinchi sonni kiriting:");
+
+// Shartni tekshirish
+if (a > b) {
+    alert("Birinchi son: " + a);
+} else {
+    alert('Birinchi son: ' + a + ' Ikkinchi son: ' + b)
+}
+
+
+// alert(`a = ${a}, b = ${b}`)
