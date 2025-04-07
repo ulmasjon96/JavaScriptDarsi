@@ -241,22 +241,26 @@
 // }
 
 // 10 ta baho kiritilishini so'raymiz
-for (let i = 1;) {
-	let baho = +prompt(`Baho ${i}:`)
+// for (let i = 1;) {
+// 	let baho = +prompt(`Baho ${i}:`)
 
-	if (baho === 5) {
-		alert("A'lo")
-	} else if (baho === 4) {
-		alert('Yaxshi')
-	} else if (baho === 3) {
-		alert('Qoniqarli')
-	} else if (baho === 2) {
-		prompt(
-			`qanaqa 2 blat gapimga tushunmayopsanmi 3 da 5 gacha belgila dedimku  `
-		)
-	} else if (baho === 1) {
-		prompt(`kallanga qo'tir chomosh qanaqa 1 blat 3 da 5 gacha belgila  `)
-	} else {
-		alert("Noto'g'ri baho")
-	}
-}
+// 	if (baho === 5) {
+// 		alert("A'lo")
+// 	} else if (baho === 4) {
+// 		alert('Yaxshi')
+// 	} else if (baho === 3) {
+// 		alert('Qoniqarli')
+// 	} else if (baho === 2) {
+// 		prompt(
+// 			`qanaqa 2 blat gapimga tushunmayopsanmi 3 da 5 gacha belgila dedimku  `
+// 		)
+// 	} else if (baho === 1) {
+// 		prompt(`kallanga qo'tir chomosh qanaqa 1 blat 3 da 5 gacha belgila  `)
+// 	} else {
+// 		alert("Noto'g'ri baho")
+// 	}
+// }
+
+
+
+
