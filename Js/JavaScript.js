@@ -261,6 +261,124 @@
 // 	}
 // }
 
+// let n = (+prompt("Son kiriting: "))
+// for (let i = 1; i <= n ; i++) {
+// 	if (n % i == 0){
+// 		alert(i)
+// 	}
+// }
+
+// let n = +prompt('Son kiriting: ')
+// for (let i = 1; i <= n; i++) {
+// 	if (n % i == 0) {
+// 		n += i
+// 	}
+// 	console.log(n)
+// }
+
+// let n = +prompt('Son kiriting: ') // Misol uchun n = berilgan son
+// let yigindi = 0
+
+// for (let i = 1; i <= n; i++) {
+// 	if (n % i === 0) {
+// 		// Misol uchun n % i == 0 bo'lsa yigindi += i
+// 		yigindi += i
+// 	}
+// }
+
+// alert(`Sonning (${n}) bulinuvchilari yig'indisi: ${yigindi}`)
+
+// if (yigindi == n) {
+//     console.log(`${n} - mukammal son.`);
+// } else {
+//     console.log(`${n} - mukammal emas.`);
+// }
+
+// let N = prompt('Son: ')
+// let sum = 0
+
+// for (let i = 1; i < N; i++) {
+// 	if (N % i == 0) {
+// 		sum += i
+// 	}
+
+// 	if (n == a) {
+// 		alert(sum)
+// 	}
+// }
+
+
+// let N = +prompt('Son kirit: ');
+// let sum = 0;
+
+// for (let i = 1; i < N; i++) {
+//     if (N % i === 0) {
+//         sum += i;
+//     }
+// }
+// console.log(`${N} ning bo‘luvchilari yig‘indisi: ${sum}`);
+
+// if (sum === N) {
+//     console.log(`${N} - mukammal son.`);
+// } else {
+//     console.log(`${N} - mukammal emas.`);
+// }
+
+
+
+// let N = +prompt('Son kirit: ');
+
+// console.log(`1 dan ${N} gacha bo‘lgan, 3 ga bo‘linadigan, lekin 5 ga bo‘linmaydigan sonlar:`);
+
+// for (let i = 1; i <= N; i++) {
+//     if (i % 3 === 0 && i % 5 !== 0) {
+//         console.log(i);
+//     }
+// }
+
+
+
+// let n = +prompt('Son kiriting: ') // Misol uchun n = 29
+// let tub = true
+
+// if (n <= 1) {
+// 	tub = false
+// } else {
+// 	for (let i = 2; i <= n / 2; i++) {
+// 		if (n % i === 0) {
+// 			tub = false
+// 			break
+// 		}
+// 	}
+	
+// }
+// if (tub) {
+// 	console.log(`${n} tub sondir.`)
+// } else {
+// 	console.log(`${n} tub son emas.`)
+// }
+
+
+// let number = +prompt('son: ');
+// let isPrime = true;
+
+// if (number <= 1) {
+//   isPrime = false;
+// } else {
+//   for (let i = 2; i <= number / 2; i++) {
+//     if (number % i === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+// }
+
+// if (isPrime){
+//     console.log('tub')
+// }else{
+//     console.log('tub emas')
+
+// }
 
 
 
