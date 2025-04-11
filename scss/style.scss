@@ -1,22 +1,22 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	width: 100%;
-	height: 100vh;
-	background-color: aqua;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 40px;
-	font-style: italic;
-	font-family: 'jetbrains mono';
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-style: italic;
+    font-family: "jetbrains mono";
 
-	h1 {
-		cursor: pointer;
-		color: rgb(255, 0, 0);
-	}
+    h1 {
+        cursor: pointer;
+        color: rgb(255, 0, 0);
+    }
 }

@@ -1,131 +1,131 @@
-// let x = prompt(`1 - Son Kiriting: `)
-// let y = prompt(`2 - Son Kiriting: `)
+// let x = prompt(`1 - Son Kiriting: `);
+// let y = prompt(`2 - Son Kiriting: `);
 
 // if (x > y) {
-// 	alert(`1 - son katta`)
+//     alert(`1 - son katta`);
 // } else if (x < y) {
-// 	alert(`2 - son katta`)
+//     alert(`2 - son katta`);
 // } else {
-// 	alert(`Bu sonlar teng`)
+//     alert(`Bu sonlar teng`);
 // }
 
 // // Foydalanuvchidan qiymatlarni olish
-// x = float(input("x ning qiymatini kiriting: "))
-// y = float(input("y ning qiymatini kiriting: "))
-// z = float(input("z ning qiymatini kiriting: "))
+// x = float(input("x ning qiymatini kiriting: "));
+// y = float(input("y ning qiymatini kiriting: "));
+// z = float(input("z ning qiymatini kiriting: "));
 
 // // Maksimal va minimal qiymatlarni topish
-// maximum = max(x, y, z)
-// minimum = min(x, y, z)
+// maximum = max(x, y, z);
+// minimum = min(x, y, z);
 
 // // Natijalarni chiqarish
-// print("Maksimal qiymat:", maximum)
-// print("Minimal qiymat:", minimum)
+// print("Maksimal qiymat:", maximum);
+// print("Minimal qiymat:", minimum);
 
-// let x = +prompt(`1 - Son Kiriting: `)
-// let y = +prompt(`2 - Son Kiriting: `)
-// let z = +prompt(`3 - Son Kiriting: `)
+// let x = +prompt(`1 - Son Kiriting: `);
+// let y = +prompt(`2 - Son Kiriting: `);
+// let z = +prompt(`3 - Son Kiriting: `);
 
 // if (isNaN(x) || isNaN(y) || isNaN(z)) {
-// 	alert("Iltimos, to'g'ri raqam kiriting!")
+//     alert("Iltimos, to'g'ri raqam kiriting!");
 // } else {
-// 	if (x === y && y === z) {
-// 		alert(`Sonlar teng`)
-// 	} else if (x > y && x > z) {
-// 		alert(`1 - son eng katta`)
-// 	} else if (y > x && y > z) {
-// 		alert(`2 - son eng katta`)
-// 	} else if (z > x && z > y) {
-// 		alert(`3 - son eng katta`)
-// 	} else if (x < y && x < z) {
-// 		alert(`1 - son eng kichik`)
-// 	} else if (y < x && y < z) {
-// 		alert(`2 - son eng kichik`)
-// 	} else if (z < x && z < y) {
-// 		alert(`3 - son eng kichik`)
-// 	} else {
-// 		alert(`Sonlar teng`)
-// 	}
+//     if (x === y && y === z) {
+//         alert(`Sonlar teng`);
+//     } else if (x > y && x > z) {
+//         alert(`1 - son eng katta`);
+//     } else if (y > x && y > z) {
+//         alert(`2 - son eng katta`);
+//     } else if (z > x && z > y) {
+//         alert(`3 - son eng katta`);
+//     } else if (x < y && x < z) {
+//         alert(`1 - son eng kichik`);
+//     } else if (y < x && y < z) {
+//         alert(`2 - son eng kichik`);
+//     } else if (z < x && z < y) {
+//         alert(`3 - son eng kichik`);
+//     } else {
+//         alert(`Sonlar teng`);
+//     }
 // }
 
-// let a = +prompt('1-sonni kirit')
-// let b = +prompt('2-sonni kirit')
-// let c = +prompt('3-sonni kirit')
+// let a = +prompt("1-sonni kirit");
+// let b = +prompt("2-sonni kirit");
+// let c = +prompt("3-sonni kirit");
 
 // // a < b < c
 // if (a < b && b < c) {
-// 	alert(`${a} ${b} dan kichik ${b} ${c} dan kichik`)
+//     alert(`${a} ${b} dan kichik ${b} ${c} dan kichik`);
 // }
 
 // // a > b > c
 // else if (a > b && b > c) {
-// 	alert(`${a} ${b} dan katta ${b} ${c} dan katta`)
+//     alert(`${a} ${b} dan katta ${b} ${c} dan katta`);
 // }
 
 // // a < b > c
 // else if (a < b && b > c) {
-// 	alert(`${a} ${b} dan kichik ${b} ${c} dan katta`)
+//     alert(`${a} ${b} dan kichik ${b} ${c} dan katta`);
 // }
 
 // // a > b < c
 // else if (a > b && b < c) {
-// 	alert(`${a} ${b} dan katta ${b} ${c} dan kichik`)
+//     alert(`${a} ${b} dan katta ${b} ${c} dan kichik`);
 // }
 
 // // a < b = c
 // else if (a < b && b == c) {
-// 	alert(`${a} ${b} dan kichik ${b} ${c} ga teng`)
+//     alert(`${a} ${b} dan kichik ${b} ${c} ga teng`);
 // }
 
 // // a > b = c
 // else if (a > b && b == c) {
-// 	alert(`${a} ${b} dan katta ${b} ${c} ga teng`)
+//     alert(`${a} ${b} dan katta ${b} ${c} ga teng`);
 // } else {
-// 	alert('Xatolik! Siz son kiritishingiz kerak')
+//     alert("Xatolik! Siz son kiritishingiz kerak");
 // }
 
-// let a = +prompt('1-sonni kirit')
-// let b = +prompt('2-sonni kirit')
-// let c = +prompt('3-sonni kirit')
+// let a = +prompt("1-sonni kirit");
+// let b = +prompt("2-sonni kirit");
+// let c = +prompt("3-sonni kirit");
 
 // // a < b < c
 // if (a < b && b < c) {
-// 	alert(`${a} < ${b} < ${c}`)
+//     alert(`${a} < ${b} < ${c}`);
 // }
 
 // // a > b > c
 // else if (a > b && b > c) {
-// 	alert(`${a} > ${b} > ${c}`)
+//     alert(`${a} > ${b} > ${c}`);
 // }
 
 // // a < b > c
 // else if (a < b && b > c) {
-// 	alert(`${a} < ${b} > ${c}`)
+//     alert(`${a} < ${b} > ${c}`);
 // }
 
 // // a > b < c
 // else if (a > b && b < c) {
-// 	alert(`${a} > ${b} < ${c}`)
+//     alert(`${a} > ${b} < ${c}`);
 // } else {
-// 	alert('Xatolik! Siz son kiritishingiz alertga')
+//     alert("Xatolik! Siz son kiritishingiz alertga");
 // }
 
 // 3 - masala
 
-// let x = prompt('x: ')
-// let y = prompt('y: ')
-// let z = prompt('z: ')
+// let x = prompt("x: ");
+// let y = prompt("y: ");
+// let z = prompt("z: ");
 
 // if (x + y + z > x * y * z) {
-// 	alert('x+y+z')
+//     alert("x+y+z");
 // } else if (x + y + z < x * y * z) {
-// 	alert('x*y*z')
+//     alert("x*y*z");
 // }
 
 // if ((x + y + z) ** 2 / 2 > x * y * z) {
-// 	alert('x+y+z')
+//     alert("x+y+z");
 // } else if ((x + y + z) ** 2 / 2 < x * y * z) {
-// 	alert('x*y*z')
+//     alert("x*y*z");
 // }
 
 // 5 - masala
@@ -151,14 +151,14 @@
 // // Natijani chiqarish
 // alert(`Natija: a = ${a}, b = ${b}, c = ${c}`);
 
-// 6 - masala
+// 6 - masala;
 
-// let x = +prompt(`x Sonlarni Kiriting: `)
-// let y = +prompt(`y Sonlarni Kiriting: `)
-// if(x>y){
-//     alert("z=x-y")
-// }else{
-//     alert("y-x+1")
+// let x = +prompt(`x Sonlarni Kiriting: `);
+// let y = +prompt(`y Sonlarni Kiriting: `);
+// if (x > y) {
+//     alert("z=x-y");
+// } else {
+//     alert("y-x+1");
 // }
 
 // 7 - masala
@@ -209,9 +209,9 @@
 // let xonalarSoni = 0;
 
 // while (son > 0) {
-//     son = Math.floor(son / 10)
-// 		xonalarSoni++;
-// 	}
+//     son = Math.floor(son / 10);
+//     xonalarSoni++;
+// }
 
 // alert(`Bu son ${xonalarSoni} xonali.`);
 
@@ -241,39 +241,39 @@
 // }
 
 // 10 ta baho kiritilishini so'raymiz
-// for (let i = 1;) {
-// 	let baho = +prompt(`Baho ${i}:`)
+// for (let i = 1; i <= 10; i++) {
+//     let baho = +prompt(`Baho ${i}:`);
 
-// 	if (baho === 5) {
-// 		alert("A'lo")
-// 	} else if (baho === 4) {
-// 		alert('Yaxshi')
-// 	} else if (baho === 3) {
-// 		alert('Qoniqarli')
-// 	} else if (baho === 2) {
-// 		prompt(
-// 			`qanaqa 2 blat gapimga tushunmayopsanmi 3 da 5 gacha belgila dedimku  `
-// 		)
-// 	} else if (baho === 1) {
-// 		prompt(`kallanga qo'tir chomosh qanaqa 1 blat 3 da 5 gacha belgila  `)
-// 	} else {
-// 		alert("Noto'g'ri baho")
-// 	}
+//     if (baho === 5) {
+//         alert("A'lo");
+//     } else if (baho === 4) {
+//         alert("Yaxshi");
+//     } else if (baho === 3) {
+//         alert("Qoniqarli");
+//     } else if (baho === 2) {
+//         prompt(
+//             `qanaqa 2 blat gapimga tushunmayopsanmi 3 da 5 gacha belgila dedimku  `
+//         );
+//     } else if (baho === 1) {
+//         prompt(`kallanga qo'tir chomosh qanaqa 1 blat 3 da 5 gacha belgila  `);
+//     } else {
+//         alert("Noto'g'ri baho");
+//     }
 // }
 
-// let n = (+prompt("Son kiriting: "))
-// for (let i = 1; i <= n ; i++) {
-// 	if (n % i == 0){
-// 		alert(i)
-// 	}
-// }
-
-// let n = +prompt('Son kiriting: ')
+// let n = +prompt("Son kiriting: ");
 // for (let i = 1; i <= n; i++) {
-// 	if (n % i == 0) {
-// 		n += i
-// 	}
-// 	console.log(n)
+//     if (n % i == 0) {
+//         alert(i);
+//     }
+// }
+
+// let n = +prompt("Son kiriting: ");
+// for (let i = 1; i <= n; i++) {
+//     if (n % i == 0) {
+//         n += i;
+//     }
+//     console.log(n);
 // }
 
 // let n = +prompt('Son kiriting: ') // Misol uchun n = berilgan son
@@ -286,7 +286,7 @@
 // 	}
 // }
 
-// alert(`Sonning (${n}) bulinuvchilari yig'indisi: ${yigindi}`)
+// alert(`Sonning (${n}) bulinuvchilari yig'indisi: ${yigindi}`);
 
 // if (yigindi == n) {
 //     console.log(`${n} - mukammal son.`);
@@ -294,21 +294,20 @@
 //     console.log(`${n} - mukammal emas.`);
 // }
 
-// let N = prompt('Son: ')
-// let sum = 0
+// let N = prompt("Son: ");
+// let sum = 0;
 
 // for (let i = 1; i < N; i++) {
-// 	if (N % i == 0) {
-// 		sum += i
-// 	}
+//     if (N % i == 0) {
+//         sum += i;
+//     }
 
-// 	if (n == a) {
-// 		alert(sum)
-// 	}
+//     if (n == a) {
+//         alert(sum);
+//     }
 // }
 
-
-// let N = +prompt('Son kirit: ');
+// let N = +prompt("Son kirit: ");
 // let sum = 0;
 
 // for (let i = 1; i < N; i++) {
@@ -324,8 +323,6 @@
 //     console.log(`${N} - mukammal emas.`);
 // }
 
-
-
 // let N = +prompt('Son kirit: ');
 
 // console.log(`1 dan ${N} gacha bo‘lgan, 3 ga bo‘linadigan, lekin 5 ga bo‘linmaydigan sonlar:`);
@@ -336,49 +333,41 @@
 //     }
 // }
 
-
-
-// let n = +prompt('Son kiriting: ') // Misol uchun n = 29
-// let tub = true
+// let n = +prompt("Son kiriting: "); // Misol uchun n = 29
+// let tub = true;
 
 // if (n <= 1) {
-// 	tub = false
+//     tub = false;
 // } else {
-// 	for (let i = 2; i <= n / 2; i++) {
-// 		if (n % i === 0) {
-// 			tub = false
-// 			break
-// 		}
-// 	}
-	
+//     for (let i = 2; i <= n / 2; i++) {
+//         if (n % i === 0) {
+//             tub = false;
+//             break;
+//         }
+//     }
 // }
 // if (tub) {
-// 	console.log(`${n} tub sondir.`)
+//     console.log(`${n} tub sondir.`);
 // } else {
-// 	console.log(`${n} tub son emas.`)
+//     console.log(`${n} tub son emas.`);
 // }
 
-
-// let number = +prompt('son: ');
+// let number = +prompt("son: ");
 // let isPrime = true;
 
 // if (number <= 1) {
-//   isPrime = false;
+//     isPrime = false;
 // } else {
-//   for (let i = 2; i <= number / 2; i++) {
-//     if (number % i === 0) {
-//       isPrime = false;
-//       break;
+//     for (let i = 2; i <= number / 2; i++) {
+//         if (number % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
 //     }
-//   }
 // }
 
-// if (isPrime){
-//     console.log('tub')
-// }else{
-//     console.log('tub emas')
-
+// if (isPrime) {
+//     console.log("tub");
+// } else {
+//     console.log("tub emas");
 // }
-
-
-
