@@ -371,3 +371,60 @@
 // } else {
 //     console.log("tub emas");
 // }
+
+// let a = [1, 2, 3, 4, 5];
+// let b = 0;
+// for (let i = 0; i < a.length; i++) {
+//     b += a[i];
+// }
+// let c = b / a.length;
+// let d = [];
+// for (g of a) {
+//     if (c < g) {
+//         d.push(g);
+//     }
+// }
+// console.log(d);
+
+// function juftToqAjratish(massiv) {
+//     const juftSonlar = [];
+//     const toqSonlar = [];
+
+//     massiv.forEach((son) => {
+//         if (son % 2 === 0) {
+//             juftSonlar.push(son);
+//         } else {
+//             toqSonlar.push(son);
+//         }
+//     });
+
+//     return [juftSonlar, toqSonlar];
+// }
+
+// // Misol uchun massiv
+// const massiv = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const [juft, toq] = juftToqAjratish(massiv);
+
+// console.log("Juft sonlar:", juft);
+// console.log("Toq sonlar:", toq);
+
+// function elementlarOrasidagiFarq(massiv) {
+//     const farqlar = [];
+
+//     for (let i = 0; i < massiv.length - 1; i++) {
+//         const farq = massiv[i + 1] - massiv[i];
+//         farqlar.push(farq);
+//     }
+
+//     return farqlar;
+// }
+
+// // Misol uchun massiv
+// const massiv = [5, 10, 7, 4];
+
+// const farqlar = elementlarOrasidagiFarq(massiv);
+
+// alert(farqlar); // [5, -3, -3]
+
+
