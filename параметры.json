@@ -1,0 +1,270 @@
+{
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "php",
+        "javascript"
+    ],
+
+    "php.docblock.classSnippet": {
+        "@author": "John",
+        "@copyright": "(c) $CURRENT_YEAR"
+    },
+
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/path/to/jdk-8"
+        },
+        {
+            "name": "JavaSE-11",
+            "path": "/path/to/jdk-11"
+        },
+        {
+            "name": "JavaSE-24",
+            "path": "/path/to/jdk-24",
+            "default": true
+        }
+    ],
+
+    // "editor.formatOnSave": false,
+    "[php]": {
+        "editor.formatOnSave": true
+    },
+
+    // "editor.insertSpaces": true,
+    // "editor.tabSize": 4,
+    "html.format.contentUnformatted": "pre,code,textarea",
+    "html.format.endWithNewline": false,
+    "html.format.extraLiners": "head, body, /html",
+    "html.format.indentHandlebars": false,
+    "html.format.indentInnerHtml": false,
+    "html.format.maxPreserveNewLines": null,
+    "html.format.preserveNewLines": true,
+    "html.format.wrapLineLength": 120,
+    "html.format.wrapAttributes": "auto",
+
+    // "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnType": false, // required
+    "editor.formatOnPaste": true, // optional
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "vs-code-prettier-eslint.prettierLast": false, // set as "true" to run 'prettier' last not first
+
+    "tabnine.experimentalAutoImports": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.tabWidth": 4,
+    "redhat.telemetry.enabled": true,
+    "explorer.confirmDelete": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "geminicodeassist.project": "global-calling-447509-j9",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "files.autoSave": "afterDelay",
+
+    // cursar
+
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#00ff1e",
+        "terminalCursor.foreground": "#00ff1e"
+    },
+
+    //comment color
+    "editor.tokenColorCustomizations": {
+        "comments": "#00ff08bd"
+    },
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.zip": "default"
+    },
+    "terminal.integrated.cursorWidth": 8,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "line",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.fontSize": 15,
+    "editor.lineHeight": 19,
+    "editor.stickyScroll.enabled": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.cursorBlinking": "expand",
+    "terminal.integrated.cursorBlinking": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.settings.applyToAllProfiles": ["liveshare.sharedTerminalWidth"],
+    "cody.commandCodeLenses": true,
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path-windows": "C:\\Users\\user\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
+        "vscode-kubernetes.kubectl-path-windows": "C:\\Users\\user\\.vs-kubernetes\\tools\\kubectl\\kubectl.exe",
+        "vscode-kubernetes.minikube-path-windows": "C:\\Users\\user\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
+    },
+    "editor.mouseWheelZoom": true,
+    "editor.cursorWidth": 3,
+    "workbench.editor.tabSizingFixedMaxWidth": 190,
+    "scm.diffDecorationsGutterWidth": 7,
+    "workbench.colorTheme": "Ayu Mirage",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "workbench.startupEditor": "none",
+    "git.enableSmartCommit": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "liveSassCompile.settings.showOutputWindowOn": "None",
+    "cSpell.userWords": ["Lalanne"],
+    "php.format.rules.chainedMethodCallsSemicolonOnNewLine": true,
+    "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+    "java.edit.smartSemicolonDetection.enabled": true,
+    "C_Cpp.vcFormat.space.insertAfterSemicolon": true,
+
+    // auto close Tag
+
+    "auto-close-tag.enableAutoCloseTag": true,
+    "auto-close-tag.SublimeText3Mode": true,
+    "auto-close-tag.enableAutoCloseSelfClosingTag": true,
+    "auto-close-tag.insertSpaceBeforeSelfClosingTag": false,
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+        "vue",
+        "liquid",
+        "erb",
+        "lang-cfml",
+        "cfml",
+        "HTML (Eex)"
+    ],
+    "auto-close-tag.disableOnLanguage": ["php", "python"],
+    "auto-close-tag.excludedTags": [
+        "area",
+        "base",
+        "br",
+        "col",
+        "command",
+        "embed",
+        "hr",
+        "img",
+        "input",
+        "keygen",
+        "link",
+        "meta",
+        "param",
+        "source",
+        "track",
+        "wbr"
+    ],
+
+    // Path Intellisense 
+
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+    "path-intellisense.ignoreTsConfigBaseUrl": true,
+    "compilerOptions": {
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.showHiddenFiles": true,
+    "files.exclude": {
+        "**/*.map.js": true
+    },
+    "path-intellisense.autoSlashAfterDirectory": false,
+    "path-intellisense.autoTriggerNextSuggestion": false,
+    "path-intellisense.absolutePathToWorkspace": true,
+    "path-intellisense.mappings": {
+        "/": "${workspaceFolder}",
+        "lib": "${workspaceFolder}/lib",
+        "global": "/Users/dummy/globalLibs"
+    },
+
+    // Code Runner
+
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "php": "C:\\php\\php.exe",
+        "python": "python",
+        "perl": "perl",
+        "ruby": "C:\\Ruby23-x64\\bin\\ruby.exe",
+        "go": "go run",
+        "html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "code-runner.executorMapByGlob": {
+        "pom.xml": "cd $dir && mvn clean package",
+        "*.test.js": "tap",
+        "*.js": "node"
+    },
+    "code-runner.defaultLanguage": "javascript",
+    "code-runner.executorMapByFileExtension": {
+        ".vbs": "cscript //Nologo"
+    },
+    "code-runner.customCommand": "echo Hello",
+    "code-runner.cwd": "path/to/working/directory",
+    "code-runner.clearPreviousOutput": false,
+    "code-runner.saveAllFilesBeforeRun": false,
+    "code-runner.saveFileBeforeRun": false,
+    "code-runner.showExecutionMessage": true,
+    "code-runner.runInTerminal": false,
+    "code-runner.preserveFocus": true,
+    "code-runner.enableAppInsights": false
+}

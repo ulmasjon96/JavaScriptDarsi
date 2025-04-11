@@ -434,3 +434,13 @@
 // sonlar.sort((a, b) => a - b);
 
 // console.log(sonlar);
+
+// objects;
+
+// const students = {
+//     surName: "Davlatov",
+//     name: "John",
+//     lastName: "",
+// };
+
+// console.log(students);
