@@ -427,4 +427,10 @@
 
 // alert(farqlar); // [5, -3, -3]
 
+// let sonlar = [6, 12, 3, 5, 7, 18, 90, 1];
 
+// console.log(sonlar);
+
+// sonlar.sort((a, b) => a - b);
+
+// console.log(sonlar);
