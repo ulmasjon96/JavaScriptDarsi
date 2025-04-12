@@ -1,14 +1,39 @@
 {
 	"svgPreview.style": {
-    "html": {
-      "background": "white"
-    }
-  },
+		"html": {
+			"background": "white"
+		}
+	},
+
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": "active",
+	"editor.guides.bracketPairsHorizontal": "active",
+	"editor.guides.highlightActiveIndentation": false,
+	"workbench.colorCustomizations": {
+		"editorCursor.foreground": "#00ff1e",
+		"terminalCursor.foreground": "#00ff1e",
+		"editorOverviewRuler.errorForeground": "#0000",
+		"editorOverviewRuler.warningForeground": "#0000",
+		"editorOverviewRuler.infoForeground": "#0000",
+		// Bracket colors
+		"editorBracketHighlight.foreground1": "#FFD700",
+		"editorBracketHighlight.foreground2": "#DA70D6",
+		"editorBracketHighlight.foreground3": "#179fff",
+		// Inactive guide colors
+		"editorBracketPairGuide.background1": "#ffd90080",
+		"editorBracketPairGuide.background2": "#CC66CC80",
+		"editorBracketPairGuide.background3": "#87CEFA80",
+		// Active guide colors
+		"editorBracketPairGuide.activeBackground1": "#ffd90080",
+		"editorBracketPairGuide.activeBackground2": "#CC66CC80",
+		"editorBracketPairGuide.activeBackground3": "#87CEFA80"
+	},
+
 	"window.openFilesInNewWindow": "off",
 	"editor.wordWrap": "on",
 	"editor.wrappingIndent": "same",
 	"editor.folding": true,
-	// "editor.minimap.enabled": false,
+	// // "editor.minimap.enabled": false,
 	"editor.detectIndentation": true,
 	"editor.suggestSelection": "first",
 	"editor.scrollBeyondLastLine": true,
@@ -20,19 +45,10 @@
 	"editor.renderControlCharacters": false,
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"editor.quickSuggestionsDelay": 0,
-	//Appearance
-	"editor.bracketPairColorization.enabled": false,
+	// //Appearance
 	"editor.glyphMargin": false,
 	"editor.scrollbar.horizontal": "hidden",
 	"editor.scrollbar.vertical": "hidden",
-	"workbench.colorCustomizations": {
-		"editorCursor.foreground": "#00ff1e",
-		"terminalCursor.foreground": "#00ff1e",
-		"editorOverviewRuler.errorForeground": "#0000",
-		"editorOverviewRuler.warningForeground": "#0000",
-		"editorOverviewRuler.infoForeground": "#0000"
-	},
-	"workbench.productIconTheme": "fluent-icons",
 	"editor.fontLigatures": true,
 	"editor.inlayHints.fontFamily": "PragmataPro",
 	"editor.tokenColorCustomizations": {
@@ -74,7 +90,7 @@
 	"debug.focusWindowOnBreak": false,
 	"debug.showInlineBreakpointCandidates": false,
 	"debug.showBreakpointsInOverviewRuler": false,
-	"prettier.semi": false,
+	// "prettier.semi": false,
 	"prettier.useTabs": true,
 	"prettier.singleQuote": true,
 	"prettier.jsxSingleQuote": true,
@@ -84,9 +100,9 @@
 	"prettier.arrowParens": "avoid",
 	"editor.inlineSuggest.enabled": true,
 	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	//Breadcrumbs
+	// //Breadcrumbs
 	"breadcrumbs.icons": false,
 	"breadcrumbs.showKeys": false,
 	"breadcrumbs.showFiles": false,
@@ -132,6 +148,7 @@
 	"window.density.editorTabHeight": "compact",
 	// "workbench.sideBar.location": "right", // provodnikni joylashuvi
 	// "workbench.statusBar.visible": false, //Pastdagi consoleni yopish
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
 	"terminal.integrated.fontFamily": "MesloLGS NF",
 	"window.zoomLevel": 1,
 
@@ -183,12 +200,7 @@
 		}
 	],
 
-	"auto-rename-tag.activationOnLanguage": [
-		"html",
-		"xml",
-		"php",
-		"javascript"
-	],
+	"auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"],
 
 	"php.docblock.classSnippet": {
 		"@author": "John",
@@ -215,7 +227,7 @@
 		"editor.formatOnSave": true
 	},
 
-	"editor.insertSpaces": true,
+	// "editor.insertSpaces": true,
 	"html.format.contentUnformatted": "pre,code,textarea",
 	"html.format.endWithNewline": false,
 	"html.format.extraLiners": "head, body, /html",
@@ -226,7 +238,7 @@
 	"html.format.wrapLineLength": 120,
 	"html.format.wrapAttributes": "auto",
 
-	"editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+	// "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
 	"editor.formatOnType": false, // required
 	"editor.formatOnPaste": true, // optional
 	"editor.formatOnSaveMode": "file", // required to format on save
@@ -237,7 +249,6 @@
 	"notebook.defaultFormatter": "esbenp.prettier-vscode",
 	"explorer.confirmDragAndDrop": false,
 	"editor.formatOnSave": true,
-	// "editor.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.tabWidth": 4,
 	"redhat.telemetry.enabled": true,
 	"explorer.confirmDelete": false,
@@ -266,7 +277,7 @@
 	"terminal.integrated.cursorStyleInactive": "line",
 	"editor.inlineSuggest.suppressSuggestions": true,
 	"editor.tabSize": 2,
-	// "editor.insertSpaces": false,
+	"editor.insertSpaces": false,
 	// "editor.detectIndentation": false,
 	"editor.smoothScrolling": true,
 	"workbench.list.smoothScrolling": true,
@@ -288,7 +299,7 @@
 	"editor.mouseWheelZoom": true,
 	"editor.cursorWidth": 3,
 	"workbench.editor.tabSizingFixedMaxWidth": 190,
-	"scm.diffDecorationsGutterWidth": 7,
+	"scm.diffDecorationsGutterWidth": 5,
 	"workbench.colorTheme": "Ayu Mirage",
 	"editor.fontFamily": "Consolas, 'Courier New', monospace",
 	// "workbench.startupEditor": "none",
@@ -399,5 +410,21 @@
 	"code-runner.preserveFocus": true,
 	"code-runner.enableAppInsights": false,
 	"google-translate.firstLanguage": "en",
-	"google-translate.secondLanguage": "ru"
+	"google-translate.secondLanguage": "ru",
+
+	//prettier
+
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"prettier.resolveGlobalModules": true,
+
+	"prettier.bracketSpacing": true,
+	"prettier.semi": true,
+	"prettier.printWidth": 120,
+	"prettier.bracketSameLine": false,
+
+	"prettier.embeddedLanguageFormatting": "auto"
 }
