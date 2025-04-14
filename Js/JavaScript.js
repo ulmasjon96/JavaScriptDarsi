@@ -575,17 +575,62 @@
 // }
 // console.log('Sonlar soni:', d)
 
+// function juftSonlarniKvadratQilibAjrat(massiv) {
+// 	return massiv
+// 		.filter(son => son % 2 === 0) // juft sonlarni ajratish
+// 		.map(son => son ** 2) // kvadrat qilish
+// 		.filter(son => son < 100) // 100 dan kichiklarni ajratish
+// }
 
-function juftSonlarniKvadratQilibAjrat(massiv) {
-  return massiv
-    .filter(son => son % 2 === 0) // juft sonlarni ajratish
-    .map(son => son ** 2) // kvadrat qilish
-    .filter(son => son < 100); // 100 dan kichiklarni ajratish
-}
+// // Misol uchun massiv
+// const massiv = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// Misol uchun massiv
-const massiv = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const natija = juftSonlarniKvadratQilibAjrat(massiv)
 
-const natija = juftSonlarniKvadratQilibAjrat(massiv);
+// console.log(natija) // [4, 16, 36, 64]
 
-console.log(natija); // [4, 16, 36, 64]
+// //Berilgan sondan kichik bo‘lgan elementlarni tartib bilan yangi massivga joylashtiring.
+
+// // for, if, push, sort
+// function kichikElementlarniJoylashtir(massiv, son) {
+//   const yangiMassiv = [];
+
+//   for (let i = 0; i < massiv.length; i++) {
+//     if (massiv[i] < son) {
+//       yangiMassiv.push(massiv[i]);
+//     }
+//   }
+
+//   yangiMassiv.sort((a, b) => a - b);
+
+//   return yangiMassiv;
+// }
+
+// // Misol uchun massiv
+// const massiv = [5, 2, 8, 1, 9, 4, 7, 6, 3];
+
+// const son = 5;
+
+// const natija = kichikElementlarniJoylashtir(massiv, son);
+
+// console.log(natija); // [1, 2, 3, 4]
+
+// function stringVaRaqamlarniAjratish(massiv) {
+//   const stringlar = massiv.filter(element => typeof element === 'string');
+//   const raqamlar = massiv.filter(element => typeof element === 'number');
+
+//   stringlar.sort((a, b) => a.length - b.length);
+
+//   return { stringlar, raqamlar };
+// }
+
+// // Misol uchun massiv
+// const massiv = ['hello', 1, 'world', 2, 'abc', 3, 'def', 4];
+
+// const natija = stringVaRaqamlarniAjratish(massiv);
+
+// console.log(natija);
+// // {
+// //   stringlar: ['abc', 'def', 'hello', 'world'],
+// //   raqamlar: [1, 2, 3, 4]
+// // }
