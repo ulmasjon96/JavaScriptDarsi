@@ -752,11 +752,11 @@
 
 // console.log('Random talabani tanladim: ', randomTalaba)
 
-const person = {
-	name: 'Alice',
-	greet: function () {
-		console.log("Hello, I'm " + this.name)
-	},
-}
+// const person = {
+// 	name: 'Alice',
+// 	greet: function () {
+// 		console.log("Hello, I'm " + this.name)
+// 	},
+// }
 
-person.greet() // Outputs: Hello, I'm Alice
+// person.greet() // Outputs: Hello, I'm Alice
