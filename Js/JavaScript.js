@@ -634,3 +634,120 @@
 // //   stringlar: ['abc', 'def', 'hello', 'world'],
 // //   raqamlar: [1, 2, 3, 4]
 // // }
+
+// // 11-masala
+
+// const olma = {
+// 	rangi: "qizil",
+// 	tam: "shirin",
+// 	nav: "eshak olma",
+// 	shakl: "oval",
+// 	pishgan: true,
+// 	qurt: 0
+// }
+
+// const spacesip = {
+// 	homePlanet: 'Earth',
+// 	color: 'silver',
+// 	crew: {
+// 		capitan: 'Otabek',
+// 		members: [
+// 			{
+// 				name: "O'lmas",
+// 				age: 29,
+// 				quality: 'medic',
+// 			},
+
+// 			{
+// 				name: 'Abdukarim',
+// 				age: 18,
+// 				quality: 'injener',
+// 			},
+
+// 			{
+// 				name: "Boboxo'ja",
+// 				age: 16,
+// 				quality: 'mexanik',
+// 			},
+
+// 			{
+// 				name: 'kamol',
+// 				age: 18,
+// 				quality: 'inspektor',
+// 			},
+// 		],
+// 	},
+// 	mission: 'Explore the solar system',
+// 	secretMission: 'Destroy Mars',
+// 	takeoff() {
+// 		console.log("Bip bop blast...")
+// 		console.log("Taking of from the ground!")
+// 	},
+// 	fly() {
+// 		console.log("The ship is flying!")
+// 	},
+// 	land() {
+// 		console.log("Prrrshshshshhhh...")
+// 		console.log("landing...")
+// 	},
+// 	shoot(){
+// 		console.log("Pew pew pew")
+// 	},
+// };
+
+// const ekipaj = spaceship.crew.members;
+
+// for(let i = 0; i<ekipaj.length)
+
+// const salaries = {
+// 	"O'lmas": 10000,
+// 	"Boboxo'ja": 9000,
+// 	Abdukarim: 10000,
+// 	Kamol: 5000,
+// 	Firdavs: 5000,
+// 	aziz: 12000,
+// 	javohir: 22000,
+// }
+
+// let summa = 0
+// let sanash = 0
+// for (let i in salaries) {
+// 	summa += salaries[i]
+// 	sanash++
+// }
+
+// const urtacha = summa / sanash
+
+// console.log(urtacha)
+
+// Math.floor()
+// Math.random()
+// Math.round()
+// Math.max()
+// Math.min()
+// Math.abs()
+// Math.
+
+const talabalar = [
+	"O'lmas",
+	"Boboxo'ja",
+	'Abdukarim',
+	'Kamol',
+	'Firdavs',
+	'aziz',
+	'javohir',
+	'Abdulaziz',
+	'Muhammadali',
+	'Marjona',
+	'Tahmina',
+	'Shahlo',
+	'Amirshox',
+	'Javohir',
+	'Kamron',
+	'Mirsaid',
+	'Muhammadmirzo',
+]
+
+const randomTalaba = talabalar[Math.floor(Math.random() * talabalar.length)]
+
+console.log('Random talabani tanladim: ', randomTalaba)
