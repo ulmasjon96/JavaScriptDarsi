@@ -728,26 +728,27 @@
 // Math.abs()
 // Math.
 
-const talabalar = [
-	"O'lmas",
-	"Boboxo'ja",
-	'Abdukarim',
-	'Kamol',
-	'Firdavs',
-	'aziz',
-	'javohir',
-	'Abdulaziz',
-	'Muhammadali',
-	'Marjona',
-	'Tahmina',
-	'Shahlo',
-	'Amirshox',
-	'Javohir',
-	'Kamron',
-	'Mirsaid',
-	'Muhammadmirzo',
-]
+// const talabalar = [
+// 	"O'lmas",
+// 	"Boboxo'ja",
+// 	'Abdukarim',
+// 	'Kamol',
+// 	'Firdavs',
+// 	'aziz',
+// 	'javohir',
+// 	'Abdulaziz',
+// 	'Muhammadali',
+// 	'Marjona',
+// 	'Tahmina',
+// 	'Shahlo',
+// 	'Amirshox',
+// 	'Javohir',
+// 	'Kamron',
+// 	'Mirsaid',
+// 	'Muhammadmirzo',
+// ]
 
-const randomTalaba = talabalar[Math.floor(Math.random() * talabalar.length)]
+// const randomTalaba = talabalar[Math.min(Math.random() * talabalar.length)]
 
-console.log('Random talabani tanladim: ', randomTalaba)
+// console.log('Random talabani tanladim: ', randomTalaba)
+
