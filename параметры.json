@@ -1,60 +1,129 @@
 {
+	// SVG fayllarining oldindan ko‘rish oynasining fonini o‘zgartirish:
+	// SVG oldindan ko‘rish uchun fon rangini oq qilib belgilash
 	"svgPreview.style": {
 		"html": {
 			"background": "white"
 		}
 	},
 
+	// Juft qavslar (brackets) ranglarini avtomatik ranglashni yoqish:
 	"editor.bracketPairColorization.enabled": true,
+
+	// Qavslar orasidagi yo‘l ko‘rsatkichlarini faollashtirish:
+	// Aktiv qavslar uchun vizual ko‘rsatkichlarni ko‘rsatadi
 	"editor.guides.bracketPairs": "active",
+
+	// Yatay qavslar orasidagi yo‘l ko‘rsatkichlarini faollashtirish:
+	// Yatay qavslar orasida ko‘rsatkichlarni faollashtiradi
 	"editor.guides.bracketPairsHorizontal": "active",
+
+	// Aktiv identatsiyani ta'kidlamaslik:
+	// Bu sozlama orqali faqat qavslarni ko‘rsatish, ammo identatsiya chizig‘ini ta'kidlamaydi
 	"editor.guides.highlightActiveIndentation": false,
+
+	// VS Code ish joyidagi ranglarni maxsus sozlash:
 	"workbench.colorCustomizations": {
+		// Kursorning oldingi rangini yashil qilib belgilash
 		"editorCursor.foreground": "#00ff1e",
+
+		// Terminaldagi kursorning oldingi rangini yashil qilib belgilash
 		"terminalCursor.foreground": "#00ff1e",
-		"editorOverviewRuler.errorForeground": "#0000",
-		"editorOverviewRuler.warningForeground": "#0000",
-		"editorOverviewRuler.infoForeground": "#0000",
-		// Bracket colors
-		"editorBracketHighlight.foreground1": "#FFD700",
-		"editorBracketHighlight.foreground2": "#DA70D6",
-		"editorBracketHighlight.foreground3": "#179fff",
-		// Inactive guide colors
-		"editorBracketPairGuide.background1": "#ffd90080",
-		"editorBracketPairGuide.background2": "#CC66CC80",
-		"editorBracketPairGuide.background3": "#87CEFA80",
-		// Active guide colors
-		"editorBracketPairGuide.activeBackground1": "#ffd90080",
-		"editorBracketPairGuide.activeBackground2": "#CC66CC80",
-		"editorBracketPairGuide.activeBackground3": "#87CEFA80"
+
+		// Rulerda xato, ogohlantirish va ma'lumot uchun vizual tasvirlarni yashirish
+		"editorOverviewRuler.errorForeground": "#0000", // Xatolarni yashirish
+		"editorOverviewRuler.warningForeground": "#0000", // Ogohlantirishlarni yashirish
+		"editorOverviewRuler.infoForeground": "#0000", // Ma'lumotlarni yashirish
+
+		// Qavslarni ta'kidlash uchun turli ranglar:
+		"editorBracketHighlight.foreground1": "#FFD700", // Birinchi qavsning rangini oltin rangga o‘zgartirish
+		"editorBracketHighlight.foreground2": "#DA70D6", // Ikkinchi qavsning rangini lavanda rangiga o‘zgartirish
+		"editorBracketHighlight.foreground3": "#179fff", // Uchinchi qavsning rangini ko‘k rangga o‘zgartirish
+
+		// Qavs juftliklari uchun fon ranglarini sozlash:
+		"editorBracketPairGuide.background1": "#ffd90080", // Birinchi qavs juftligi uchun fon rangini sariq qilib belgilash
+		"editorBracketPairGuide.background2": "#CC66CC80", // Ikkinchi qavs juftligi uchun fon rangini binafsha qilib belgilash
+		"editorBracketPairGuide.background3": "#87CEFA80", // Uchinchi qavs juftligi uchun fon rangini och-ko‘k qilib belgilash
+
+		// Aktiv qavs juftligi uchun fon ranglarini sozlash:
+		"editorBracketPairGuide.activeBackground1": "#ffd90080", // Aktiv birinchi qavs juftligi fon rangi
+		"editorBracketPairGuide.activeBackground2": "#CC66CC80", // Aktiv ikkinchi qavs juftligi fon rangi
+		"editorBracketPairGuide.activeBackground3": "#87CEFA80" // Aktiv uchinchi qavs juftligi fon rangi
 	},
 
+	// Yangi fayllarni alohida oynada ochish:
+	// "off" — fayllar ayni oynada ochiladi
 	"window.openFilesInNewWindow": "off",
+
+	// Matnni o‘qish uchun avtomatik qatorni kengaytirish:
+	// "on" — matnni o‘qish uchun uzun qatordagi matnni avtomatik ravishda yangi qatorga ko‘chiradi
 	"editor.wordWrap": "on",
+
+	// Qatorni o‘qish uchun matnni qaysi holatda joylashishini belgilash:
+	// "same" — yangi qatordagi matnni birinchi qatorning indentatsiyasiga mos ravishda o‘qiydi
 	"editor.wrappingIndent": "same",
+
+	// Kiritishlarni yashirish va qaysi kod bloklarini o‘zgartirish uchun qatorlarni bükme (folding):
 	"editor.folding": true,
-	// // "editor.minimap.enabled": false,
+
+	// Avtomatik indentatsiyani aniqlash:
+	// true — avtomatik indentatsiya qo‘llaniladi
 	"editor.detectIndentation": true,
+
+	// Kod takliflarida tanlashni boshida (birinchi) variantga olib borish:
 	"editor.suggestSelection": "first",
+
+	// Oxirgi qatordan keyin skrollni davom ettirish:
+	// true — oxirgi qatorni ko‘rganingizdan so‘ng yana skrollni davom ettiradi
 	"editor.scrollBeyondLastLine": true,
-	"editor.multiCursorModifier": "ctrlCmd",
+
+	// Ko‘p kursorli rejimda qanday tugma ishlatishni tanlash:
+	// "ctrlCmd" — Windows/Linux uchun Ctrl, macOS uchun Cmd ishlatiladi
+	"editor.multiCursorModifier": "alt",
+
+	// Linked editing — biror elementni tahrirlaganingizda unga bog‘langan boshqa elementlarni ham tahrirlashni avtomatik ravishda ta'minlash:
 	"editor.linkedEditing": true,
+
+	// HTML, JavaScript va TypeScript fayllarida avtomatik yopuvchi teglar:
+	// true — teglar avtomatik ravishda yopiladi
 	"html.autoClosingTags": true,
 	"javascript.autoClosingTags": true,
 	"typescript.autoClosingTags": true,
-	"editor.renderControlCharacters": false,
+
+	// Nazorat belgilarini (control characters) tahrir qilishda ko‘rsatmaslik:
+	"editor.renderControlCharacters": true, ////////////////////////////////
+
+	// Unicode’ning noaniq belgilarini ta'kidlashni o‘chirish:
 	"editor.unicodeHighlight.ambiguousCharacters": false,
+
+	// Takliflar ko‘rsatilganda, tezlikni belgilash:
+	// 0 — takliflar darhol ko‘rsatiladi
 	"editor.quickSuggestionsDelay": 0,
-	// //Appearance
+
+	// Tahrir qilish oynasida glyph margin’ni o‘chirish:
 	"editor.glyphMargin": false,
+
+	// Gorizontal va vertikal skrollbalarni yashirish:
 	"editor.scrollbar.horizontal": "hidden",
 	"editor.scrollbar.vertical": "hidden",
+
+	// Font ligaturalarini yoqish:
+	// true — ligaturalar (yani, bir nechta belgilarni bitta tasvirga o‘zgartirish) faollashtiriladi
 	"editor.fontLigatures": true,
+
+	// Inlay hints uchun font o‘lchamini belgilash:
+	// "PragmataPro" — bu maxsus font o‘lchami
 	"editor.inlayHints.fontFamily": "PragmataPro",
+
+	// Token ranglari va font stilini sozlash:
 	"editor.tokenColorCustomizations": {
+		// Kommentlar uchun rangni belgilash (yashil rang)
 		"comments": "#00ff08bd",
+
+		// TextMate qoidalari bo‘yicha rang va font stilini sozlash
 		"textMateRules": [
 			{
+				// Kommentlar, sinf nomlari, kalit so‘zlar, o‘zgarmaslar va saqlash modifierlarining font stilini italik qilish
 				"scope": [
 					"comment",
 					"entity.name.type.class",
@@ -63,9 +132,12 @@
 					"storage.modifier",
 					"storage.type.class.js"
 				],
-				"settings": { "fontStyle": "italic" }
+				"settings": {
+					"fontStyle": "italic"
+				}
 			},
 			{
+				// Noto‘g‘ri, operatorlar, CSS raqamli konstantalar va boshqa o‘zgaruvchilar uchun font stilini o‘zgartirmaslik
 				"scope": [
 					"invalid",
 					"keyword.operator",
@@ -74,88 +146,203 @@
 					"constant.numeric.decimal.js",
 					"constant.numeric.json"
 				],
-				"settings": { "fontStyle": "" }
+				"settings": {
+					"fontStyle": "bold"
+				}
 			}
 		]
 	},
+
+	// Terminaldagi yozuv o‘lchamini belgilash:
 	"terminal.integrated.fontSize": 15,
+
+	// Explorer panelida papkalarni siqmasdan ko‘rsatish:
+	// false — papkalarni siqmasdan, ya'ni to‘liq ko‘rsatadi
 	"explorer.compactFolders": false,
+
+	// Emmet uchun til moslashuvi:
 	"emmet.includeLanguages": {
-		"blade": "html",
-		"javascript": "javascriptreact"
+		"typescript": "typescriptreact",
+		"blade": "html", // Blade fayllarini HTML sintaksisi bilan ishlashga moslashtirish
+		"javascript": "javascriptreact" // JavaScript fayllarini JavaScript React bilan ishlashga moslashtirish
 	},
+
+	// Tab o‘lchamining o‘lchamini kamaytirish:
+	// "shrink" — tablar kichraytiriladi (tablarning o‘lchami avtomatik ravishda bo‘sh joyga mos keladi)
 	"workbench.editor.tabSizing": "shrink",
-	"workbench.startupEditor": "newUntitledFile",
+
+	// Debugger asboblar panelini yashirish:
+	// "hidden" — Debugger paneli yashiriladi, faqat kerakli holatlarda ko‘rinadi
 	"debug.toolBarLocation": "hidden",
+
+	// Breakpoint (to‘xtash nuqtasi) bo‘lganda, oynani avtomatik ravishda fokus qilishni o‘chirish:
+	// false — breakpoint (to‘xtash nuqtasi) bo‘lganda, oynaning avtomatik ravishda fokus qilinishini o‘chirish
 	"debug.focusWindowOnBreak": false,
+
+	// Inline breakpoint (to‘xtash nuqtasi) nomzodlarini ko‘rsatmaslik:
+	// false — inline breakpoint nomzodlari ko‘rsatilmaydi
 	"debug.showInlineBreakpointCandidates": false,
+
+	// Overview ruler (umumiy ko‘rish chizig‘i)da breakpoint (to‘xtash nuqtasi)larni ko‘rsatmaslik:
+	// false — breakpoints umumiy ko‘rish chizig‘ida ko‘rsatilmaydi
 	"debug.showBreakpointsInOverviewRuler": false,
-	// "prettier.semi": false,
+
+	// Prettier-da nuqtali vergul (semi) ishlatilmasligi:
+	// false — nuqtali vergul (semi) ishlatilmaydi
+	"prettier.semi": true,
+
+	// Prettier-da tab o‘rniga bo‘shliq ishlatish:
+	// true — Prettier kodni tab bilan indentatsiya qiladi
 	"prettier.useTabs": true,
+
+	// Prettier-da bir qo‘shni belgini ishlatish:
+	// true — yagona qo‘shni belgi (single quote) ishlatiladi (misol: `'` o‘rniga `"` emas)
 	"prettier.singleQuote": true,
+
+	// JSX uchun Prettier-da bir qo‘shni belgini ishlatish:
+	// true — JSX da yagona qo‘shni belgi ishlatiladi
 	"prettier.jsxSingleQuote": true,
+
+	// Fayl saqlanganida kodni tartibga solish (importlar):
+	// "explicit" — importlarni aniq ravishda tartibga solish (automatik importlarni o‘zgartirish)
 	"editor.codeActionsOnSave": {
-		"source.organizeImports": "explicit"
+		"source.organizeImports": "explicit",
+		"source.fixAll": true
 	},
+
+	// Prettier-da arrow qavslarini o‘rganishda ularni kamroq ishlatish:
+	// "avoid" — arrow qavslarini faqat kerak bo‘lganda ishlatish
 	"prettier.arrowParens": "avoid",
+
+	// Inline takliflarni (inline suggestions) faollashtirish:
 	"editor.inlineSuggest.enabled": true,
+
+	// HTML fayllari uchun Prettier formatter'ini ishlatish:
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	// //Breadcrumbs
+	// Breadcrumbs (yo‘l ko‘rsatkichlari) ikonalarini yashirish:
 	"breadcrumbs.icons": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da tugmalarning ko‘rsatilishini o‘chirish:
 	"breadcrumbs.showKeys": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da fayllarning ko‘rsatilishini o‘chirish:
 	"breadcrumbs.showFiles": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da simvollar yo‘lini ko‘rsatishni o‘chirish:
 	"breadcrumbs.symbolPath": "off",
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da massivlarning ko‘rsatilishini o‘chirish:
 	"breadcrumbs.showArrays": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da voqealar (events)ni ko‘rsatishni o‘chirish:
 	"breadcrumbs.showEvents": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da maydonlarni (fields) ko‘rsatishni o‘chirish:
 	"breadcrumbs.showFields": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da klasslarni ko‘rsatishni o‘chirish:
 	"breadcrumbs.showClasses": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da metodlarni ko‘rsatishni o‘chirish:
 	"breadcrumbs.showMethods": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da boolean (mantiqiy) qiymatlarni ko‘rsatishni o‘chirish:
 	"breadcrumbs.showBooleans": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da funktsiyalarni ko‘rsatishni o‘chirish:
 	"breadcrumbs.showFunctions": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da konstantalarni ko‘rsatishni o‘chirish:
 	"breadcrumbs.showConstants": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da enum a'zolarini ko‘rsatishni o‘chirish:
 	"breadcrumbs.showEnumMembers": false,
+
+	// Breadcrumbs (yo‘l ko‘rsatkichlari)da konstruktorlarni ko‘rsatishni o‘chirish:
 	"breadcrumbs.showConstructors": false,
-	//JS & TS
+
+	// JavaScript fayllarida importlarni ko‘chirishni faollashtirish (fayl ko‘chirilganda importlarni yangilash):
 	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	// TypeScript fayllarida importlarni ko‘chirishni faollashtirish (fayl ko‘chirilganda importlarni yangilash):
 	"typescript.updateImportsOnFileMove.enabled": "always",
+
+	// TypeScript-da qo‘shni belgini yagona qo‘shni belgi (`'`) bilan ishlatish:
 	"typescript.preferences.quoteStyle": "single",
+
+	// JavaScript-da qo‘shni belgini yagona qo‘shni belgi (`'`) bilan ishlatish:
 	"javascript.preferences.quoteStyle": "single",
+
+	// JavaScript formatida nuqtali vergul (semi)ni olib tashlash:
 	"javascript.format.semicolons": "remove",
+
+	// TypeScript formatida nuqtali vergul (semi)ni olib tashlash:
 	"typescript.format.semicolons": "remove",
+
+	// Overview ruler (umumiy ko‘rish chizig‘i)da kursorni yashirish:
 	"editor.hideCursorInOverviewRuler": true,
+
+	// Fayllarni yashirish sozlamalari (masalan, `.map.js`, `.expo`, `.idea`, va boshqalar):
 	"files.exclude": {
-		"**/*.map.js": true,
-		"**/.expo": true,
-		"**/.expo-shared": true,
-		"**/.idea": true,
-		"**/.next": true,
-		"**/dist": true
+		"**/*.map.js": true, // JavaScript manba xaritalarini yashirish
+		"**/.expo": true, // Expo direktoriyasini yashirish
+		"**/.expo-shared": true, // Expo ulashilgan fayllarni yashirish
+		"**/.idea": true, // IntelliJ IDEA yoki PhpStorm uchun yashirish
+		"**/.next": true, // Next.js build fayllarini yashirish
+		"**/dist": true // Distributsiya (build) fayllarini yashirish
 	},
+	// Tizimni yopishdan oldin tasdiqlashni faqat klaviatura yordamida amalga oshirish:
 	"window.confirmBeforeClose": "keyboardOnly",
+
+	// Emmet kengaytmasini tab tugmasi bilan faollashtirish:
 	"emmet.triggerExpansionOnTab": true,
+
+	// Git repozitoriyasini ota papkalarida ochmaslik:
 	"git.openRepositoryInParentFolders": "never",
+
+	// Kursorni nozik chiziq sifatida ko‘rsatish:
 	"editor.cursorStyle": "line-thin",
-	"editor.cursorSmoothCaretAnimation": "explicit",
+
+	// Kursorning silliq animatsiyasini explicit qilish (faqat aniqlangan vaqtda animatsiya qilish):
+	"editor.cursorSmoothCaretAnimation": "on",
+
+	// JS/TS proyektida experimental dekoratorlarni qo‘llashni yoqish:
 	"js/ts.implicitProjectConfig.experimentalDecorators": true,
+
+	// Kursorni ko‘rsatishda bir nechta ta'riflar mavjud bo‘lsa, "goto"ni ishlatish:
 	"editor.gotoLocation.multipleDefinitions": "goto",
+
+	// Erişim yordamchi vositalarini o‘chirish:
 	"editor.accessibilitySupport": "off",
-	"settingsSync.ignoredExtensions": ["arickho.matey-vscode"],
-	// "window.commandCenter": false,
+
+	// Sinxronizatsiya qilinmaydigan kengaytmalar ro‘yxati:
+	"settingsSync.ignoredExtensions": ["vscode-remote.remote-ssh", "vscode-remote.remote-ssh-edit"],
+
+	// Ish joyi (workspace)da layoutni boshqarishni o‘chirish:
 	"workbench.layoutControl.enabled": false,
+
+	// Editor bo‘sh bo‘lsa, maslahatlarga hint ko‘rsatmaslik:
 	"workbench.editor.empty.hint": "hidden",
+
+	// Editor tablarining bo‘yi kichik qilish:
 	"window.density.editorTabHeight": "compact",
-	// "workbench.sideBar.location": "right", // provodnikni joylashuvi
-	// "workbench.statusBar.visible": false, //Pastdagi consoleni yopish
+
+	// PowerShellni Windows uchun terminalni default profil sifatida o‘rnatish:
 	"terminal.integrated.defaultProfile.windows": "PowerShell",
+
+	// Terminalda ishlatiladigan shriftni MesloLGS NF qilib o‘rnatish:
 	"terminal.integrated.fontFamily": "MesloLGS NF",
+
+	// Tizim oynasini 1x darajaga kattalashtirish:
 	"window.zoomLevel": 1,
 
+	// Better Comments kengaytmasi uchun maxsus teglar va ranglarni sozlash:
 	"better-comments.tags": [
 		{
-			"tag": "!",
-			"color": "#FF2D00",
+			"tag": "!", // Tezkor ogohlantirishlar uchun tag
+			"color": "#FF2D00", // Rang: qizil
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -163,8 +350,8 @@
 			"italic": false
 		},
 		{
-			"tag": "?",
-			"color": "#3498DB",
+			"tag": "?", // Savol uchun tag
+			"color": "#3498DB", // Rang: ko‘k
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -172,17 +359,17 @@
 			"italic": false
 		},
 		{
-			"tag": "//",
-			"color": "#474747",
-			"strikethrough": true,
+			"tag": "//", // Kommentariyalar uchun tag
+			"color": "#474747", // Rang: kulrang
+			"strikethrough": true, // Chiziq bilan belgilash
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": false,
 			"italic": false
 		},
 		{
-			"tag": "todo",
-			"color": "#FF8C00",
+			"tag": "todo", // "Todo" vazifalari uchun tag
+			"color": "#FF8C00", // Rang: apelsin
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -190,8 +377,8 @@
 			"italic": false
 		},
 		{
-			"tag": "*",
-			"color": "#98C379",
+			"tag": "*", // Muhim belgilar uchun tag
+			"color": "#98C379", // Rang: yashil
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -199,146 +386,171 @@
 			"italic": false
 		}
 	],
-
+	// Auto Rename Tag kengaytmasini HTML, XML, PHP va JavaScript tillarida faollashtirish:
 	"auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"],
 
+	// PHP uchun docblock snippetlarni sozlash:
 	"php.docblock.classSnippet": {
-		"@author": "John",
-		"@copyright": "(c) $CURRENT_YEAR"
+		"@author": "John", // Muallifni o'rnatish
+		"@copyright": "(c) $CURRENT_YEAR" // Mualliflik huquqi va joriy yilni avtomatik qo‘shish
 	},
 
+	// Java uchun konfiguratsiyalarni sozlash (JDK versiyalarini qo‘shish):
 	"java.configuration.runtimes": [
 		{
-			"name": "JavaSE-1.8",
-			"path": "/path/to/jdk-8"
+			"name": "JavaSE-1.8", // Java 1.8 versiyasining konfiguratsiyasi
+			"path": "/path/to/jdk-8" // JDK 1.8ning yo'li
 		},
 		{
-			"name": "JavaSE-11",
-			"path": "/path/to/jdk-11"
+			"name": "JavaSE-11", // Java 11 versiyasining konfiguratsiyasi
+			"path": "/path/to/jdk-11" // JDK 11ning yo'li
 		},
 		{
-			"name": "JavaSE-24",
-			"path": "/path/to/jdk-24",
-			"default": true
+			"name": "JavaSE-24", // Java 24 versiyasining konfiguratsiyasi
+			"path": "/path/to/jdk-24", // JDK 24ning yo'li
+			"default": true // JDK 24ni standart qilib belgilash
 		}
 	],
 
+	// PHP fayllarini saqlashda formatlashni yoqish:
 	"[php]": {
 		"editor.formatOnSave": true
 	},
 
-	// "editor.insertSpaces": true,
-	"html.format.contentUnformatted": "pre,code,textarea",
-	"html.format.endWithNewline": false,
-	"html.format.extraLiners": "head, body, /html",
-	"html.format.indentHandlebars": false,
-	"html.format.indentInnerHtml": false,
-	"html.format.maxPreserveNewLines": null,
-	"html.format.preserveNewLines": true,
-	"html.format.wrapLineLength": 120,
-	"html.format.wrapAttributes": "auto",
+	// HTML formatlash sozlamalari:
+	"html.format.contentUnformatted": null, // "pre", "code", "textarea" elementlari ichidagi matnni formatlamaslik
+	"html.format.extraLiners": "head, body, /html", // "head", "body", va "/html" elementlaridan keyin yangi satr qo‘shish
+	"html.format.indentHandlebars": false, // Handlebars kodini ichki indentatsiyani faollashtirishni o‘chirish
+	"html.format.indentInnerHtml": false, // HTML ichidagi ichki HTML kodini indentatsiya qilishni o‘chirish
+	"html.format.maxPreserveNewLines": null, // Bo'sh satrlarni saqlash cheklovini olib tashlash
+	"html.format.preserveNewLines": true, // Yangi satrlarni saqlashni yoqish
+	"html.format.wrapLineLength": 120, // Qator uzunligini 120 belgiga qisqartirish
+	"html.format.wrapAttributes": "auto", // Harf terish vaqtida formatlashni o‘chirish
+	"editor.formatOnPaste": true, // Kodni nusxalashda (paste) formatlashni yoqish
+	"editor.formatOnSaveMode": "file", // Formatlashni faqat faylni saqlashda qo‘llash
 
-	// "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-	"editor.formatOnType": false, // required
-	"editor.formatOnPaste": true, // optional
-	"editor.formatOnSaveMode": "file", // required to format on save
-	"vs-code-prettier-eslint.prettierLast": false, // set as "true" to run 'prettier' last not first
+	// Prettier va ESLint uchun sozlamalar:
+	"vs-code-prettier-eslint.prettierLast": false, // Prettier ni oxirgi qadam sifatida ishlatmaslik
 
-	"tabnine.experimentalAutoImports": true,
-	"workbench.iconTheme": "material-icon-theme",
+	// Ish joyi uchun ikonka mavzusi:
+	"workbench.iconTheme": "material-icon-theme", // Material ikonkalarini ishlatish
+
+	// Jupyter notebooklar uchun Prettierni standart formatlovchi sifatida sozlash:
 	"notebook.defaultFormatter": "esbenp.prettier-vscode",
-	"explorer.confirmDragAndDrop": false,
-	"editor.formatOnSave": true,
-	"prettier.tabWidth": 4,
-	"redhat.telemetry.enabled": true,
-	"explorer.confirmDelete": false,
-	"liveServer.settings.donotVerifyTags": true,
-	"geminicodeassist.project": "global-calling-447509-j9",
-	"liveServer.settings.donotShowInfoMsg": true,
-	"files.autoSave": "afterDelay",
 
-	// cursar
+	// Explorer uchun tasdiqlashlarni o‘chirish:
+	"explorer.confirmDragAndDrop": false, // Fayllarni tortib qo‘yishda tasdiqlashni o‘chirish
+	"explorer.confirmDelete": false, // Faylni o‘chirishda tasdiqlashni o‘chirish
 
-	// "workbench.colorCustomizations": {
-	// 	"editorCursor.foreground": "#00ff1e",
-	// 	"terminalCursor.foreground": "#00ff1e"
-	// },
+	// Live Server kengaytmasining sozlamalari:
+	"liveServer.settings.donotVerifyTags": true, // Taglarni tekshirishni o‘chirish
+	"liveServer.settings.donotShowInfoMsg": true, // Info xabarlarini ko‘rsatmaslik
 
-	//comment color
-	// "editor.tokenColorCustomizations": {
-	// 	"comments": "#00ff08bd"
-	// },
+	// Fayllarni ko‘rish va tahrirlash uchun editor bog'lanishlarini sozlash:
 	"workbench.editorAssociations": {
-		"*.copilotmd": "vscode.markdown.preview.editor",
-		"*.zip": "default"
+		"*.copilotmd": "vscode.markdown.preview.editor", // ".copilotmd" fayllarini Markdown preview editorida ochish
+		"*.zip": "default" // ".zip" fayllarini default editor bilan ochish
 	},
-	"terminal.integrated.cursorWidth": 8,
-	"terminal.integrated.cursorStyle": "line",
-	"terminal.integrated.cursorStyleInactive": "line",
-	"editor.inlineSuggest.suppressSuggestions": true,
-	"editor.tabSize": 2,
-	"editor.insertSpaces": false,
-	// "editor.detectIndentation": false,
-	"editor.smoothScrolling": true,
-	"workbench.list.smoothScrolling": true,
-	"terminal.integrated.smoothScrolling": true,
-	"editor.fontSize": 15,
-	"editor.lineHeight": 19,
-	"editor.stickyScroll.enabled": false,
-	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-	"editor.cursorBlinking": "expand",
-	"terminal.integrated.cursorBlinking": true,
-	// "editor.cursorSmoothCaretAnimation": "on",
-	"workbench.settings.applyToAllProfiles": ["liveshare.sharedTerminalWidth"],
-	"cody.commandCodeLenses": true,
-	"vs-kubernetes": {
-		"vscode-kubernetes.helm-path-windows": "C:\\Users\\user\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
-		"vscode-kubernetes.kubectl-path-windows": "C:\\Users\\user\\.vs-kubernetes\\tools\\kubectl\\kubectl.exe",
-		"vscode-kubernetes.minikube-path-windows": "C:\\Users\\user\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
-	},
-	"editor.mouseWheelZoom": true,
-	"editor.cursorWidth": 3,
-	"workbench.editor.tabSizingFixedMaxWidth": 190,
-	"scm.diffDecorationsGutterWidth": 5,
-	"workbench.colorTheme": "Ayu Mirage",
-	"editor.fontFamily": "Consolas, 'Courier New', monospace",
-	// "workbench.startupEditor": "none",
-	"git.enableSmartCommit": true,
-	"diffEditor.ignoreTrimWhitespace": false,
-	"liveSassCompile.settings.showOutputWindowOn": "None",
-	"cSpell.userWords": ["Lalanne"],
-	"php.format.rules.chainedMethodCallsSemicolonOnNewLine": true,
-	"powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
-	"java.edit.smartSemicolonDetection.enabled": true,
-	"C_Cpp.vcFormat.space.insertAfterSemicolon": true,
+	// Terminal kursorining kengligini sozlash:
+	"terminal.integrated.cursorWidth": 5, // Terminal kursorining kengligini 8 qilib belgilash
+	"terminal.integrated.cursorStyle": "line", // Terminalda kursorni chiziq shaklida ko‘rsatish
+	"terminal.integrated.cursorStyleInactive": "line", // Aktiv bo‘lmagan terminalda ham chiziqli kursor ko‘rsatish
 
-	// auto close Tag
+	// Kodda inline (ichki) takliflar bilan ishlash:
+	"editor.inlineSuggest.suppressSuggestions": true, // Inline takliflarni o‘chirish
 
-	"auto-close-tag.enableAutoCloseTag": true,
-	"auto-close-tag.SublimeText3Mode": true,
-	"auto-close-tag.enableAutoCloseSelfClosingTag": true,
-	"auto-close-tag.insertSpaceBeforeSelfClosingTag": false,
+	// Editorning tab va sozlamalari:
+	"editor.tabSize": 2, // Tab kengligini 2 qilib belgilash
+	"editor.insertSpaces": false, // Tablar o‘rniga bo‘sh joylar qo‘shishni o‘chirish
+	"editor.smoothScrolling": true, // Silliq skrollingni yoqish
+	"workbench.list.smoothScrolling": true, // Ish joyidagi ro‘yxatlar uchun ham silliq skrollingni yoqish
+	"terminal.integrated.smoothScrolling": true, // Terminalda silliq skrollingni yoqish
+
+	// Editorning o‘lcham va qator balandligi:
+	"editor.fontSize": 16, // Font o‘lchamini 15 px qilib belgilash
+	"editor.lineHeight": 27, // Qator balandligini 27 qilib belgilash
+
+	// Sticky Scroll (saqlash holatidagi skrolling) sozlamalari:
+	"editor.stickyScroll.enabled": false, // Sticky Scrollni o‘chirish (editorni yuqoriga yoki pastga skrollashda kodni yuqoriga saqlab qo‘yish)
+
+	// Bracket Pair Colorization (qavslarning ranglarini o‘zgartirish):
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true, // Har bir qavs turi uchun alohida ranglar havzasini yaratish
+
+	// Kursorni blink (yorqinlashish) effektini sozlash:
+	"editor.cursorBlinking": "expand", // Kursorning yorqinlashishini "expand" (kengayish) usulida sozlash
+	"terminal.integrated.cursorBlinking": true, // Terminalda kursorning yorqinlashishini yoqish
+
+	// Ish joyidagi sozlamalar:
+	"workbench.settings.applyToAllProfiles": ["liveshare.sharedTerminalWidth"], // "Live Share" profilida o‘zgartirishlar uchun sozlamalarni qo‘llash
+
+	// Scroll va kursorni boshqarish:
+	"editor.mouseWheelZoom": true, // Mouse wheel yordamida zoom qilishni yoqish
+	"editor.cursorWidth": 3, // Editor kursorining kengligini 3 qilib belgilash
+	"workbench.editor.tabSizingFixedMaxWidth": 190, // Tabning maksimal kengligini 190px qilib belgilash
+
+	// SCM (source control management) uchun diff dekoratsiyalarini sozlash:
+	"scm.diffDecorationsGutterWidth": 5, // Diff dekoratsiyalarining gadjer kengligini 5 qilib belgilash
+
+	// Ish joyining rang mavzusini belgilash:
+	"workbench.colorTheme": "Ayu Mirage", // "Ayu Mirage" rang mavzusini tanlash
+
+	// Editorning font sozlamalari:
+	"editor.fontFamily": "JetBrains Mono", // Konsol uslubidagi fontlarni ishlatish
+
+	// Ish joyining boshlanish holatini sozlash:
+	"workbench.startupEditor": "none", // Ish joyi ochilganda hech qanday editorni ochmaslik
+
+	// Git va diff sozlamalari:
+	"git.enableSmartCommit": true, // Smart commitni yoqish (commitlarni avtomatik tanlash)
+	"diffEditor.ignoreTrimWhitespace": false, // Diff editorida bo‘sh joylarni ko‘rsatish
+
+	// Live Sass Compile kengaytmasining sozlamalari:
+	"liveSassCompile.settings.showOutputWindowOn": "None", // Sass fayllari uchun chiqish oynasini ko‘rsatmaslik
+
+	// Maxsus so‘zlarni Spelling tekshiruvchisi (cSpell) ga qo‘shish:
+	"cSpell.userWords": ["Lalanne"], // "Lalanne" so‘zini foydalanuvchi so‘zlari ro‘yxatiga qo‘shish
+
+	// PHP formatlash sozlamalari:
+	"php.format.rules.chainedMethodCallsSemicolonOnNewLine": true, // Chained metod chaqiruvlarida har bir yangi qatorda nuqtali vergulni qo‘shish
+
+	// Java uchun smart semicolon (nuqtali vergul) aniqlashni yoqish:
+	"java.edit.smartSemicolonDetection.enabled": true, // Java kodida nuqtali vergulni avtomatik qo‘shish
+
+	// Auto Close Tag kengaytmasining sozlamalari:
+	"auto-close-tag.enableAutoCloseTag": true, // Tagni avtomatik yopishni yoqish
+	"auto-close-tag.SublimeText3Mode": true, // Sublime Text 3 rejimida auto close tagni yoqish
+	"auto-close-tag.enableAutoCloseSelfClosingTag": true, // O‘z-o‘zini yopuvchi teglarni avtomatik yopishni yoqish
+	"auto-close-tag.insertSpaceBeforeSelfClosingTag": false, // O‘z-o‘zini yopuvchi teglar oldidan bo‘sh joy qo‘shmaslik
+	// Auto Close Tag kengaytmasining sozlamalari:
 	"auto-close-tag.activationOnLanguage": [
-		"xml",
-		"php",
-		"blade",
-		"ejs",
-		"jinja",
-		"javascript",
-		"javascriptreact",
-		"typescript",
-		"typescriptreact",
-		"plaintext",
-		"markdown",
-		"vue",
-		"liquid",
-		"erb",
-		"lang-cfml",
-		"cfml",
-		"HTML (Eex)"
+		// Taglarni avtomatik yopishni faollashtiradigan tillar ro‘yxati
+		"xml", // XML
+		"php", // PHP
+		"blade", // Blade (Laravel)
+		"ejs", // EJS
+		"jinja", // Jinja (Python templating engine)
+		"javascript", // JavaScript
+		"javascriptreact", // JavaScript React
+		"typescript", // TypeScript
+		"typescriptreact", // TypeScript React
+		"plaintext", // Oddiy matn fayllari
+		"markdown", // Markdown
+		"vue", // Vue.js
+		"liquid", // Liquid (templating engine)
+		"erb", // ERB (Ruby templating engine)
+		"lang-cfml", // ColdFusion Markup Language
+		"cfml", // ColdFusion Markup Language (CFML)
+		"HTML (Eex)" // HTML (Eex)
 	],
-	"auto-close-tag.disableOnLanguage": ["php", "python"],
+
+	"auto-close-tag.disableOnLanguage": [
+		// Bu tillarda avtomatik tag yopishni o‘chirish
+		"php", // PHP
+		"python" // Python
+	],
+
 	"auto-close-tag.excludedTags": [
+		// Bu teglar uchun avtomatik yopishni o‘chirish
 		"area",
 		"base",
 		"br",
@@ -357,74 +569,159 @@
 		"wbr"
 	],
 
-	// Path Intellisense
+	// TypeScript va JavaScript uchun importlarni yollashni o‘chirish:
+	"typescript.suggest.paths": false, // TypeScriptda import yo‘llarini taklif qilishni o‘chirish
+	"javascript.suggest.paths": false, // JavaScriptda import yo‘llarini taklif qilishni o‘chirish
 
-	"typescript.suggest.paths": false,
-	"javascript.suggest.paths": false,
-	"path-intellisense.ignoreTsConfigBaseUrl": true,
-	"compilerOptions": {
-		"paths": {
-			"@/*": ["src/*"]
-		}
-	},
-	"path-intellisense.extensionOnImport": true,
-	"path-intellisense.showHiddenFiles": true,
-	"path-intellisense.autoSlashAfterDirectory": false,
-	"path-intellisense.autoTriggerNextSuggestion": false,
-	"path-intellisense.absolutePathToWorkspace": true,
+	// Path Intellisense kengaytmasining sozlamalari:
+	"path-intellisense.ignoreTsConfigBaseUrl": true, // TypeScript konfiguratsiyasidagi baseUrl-ni e'tiborsiz qoldirish
+	"path-intellisense.extensionOnImport": true, // Importlarni yozish paytida fayl kengaytmasini avtomatik qo‘shish
+	"path-intellisense.showHiddenFiles": true, // Yashirin fayllarni ko‘rsatish
+	"path-intellisense.autoSlashAfterDirectory": false, // Kataloglar orasida slash qo‘yishni avtomatik qilmaslik
+	"path-intellisense.autoTriggerNextSuggestion": false, // Keyingi takliflarni avtomatik berishni o‘chirish
+	"path-intellisense.absolutePathToWorkspace": true, // Absolyut yo‘llarni ishchi joyga nisbatan hisoblash
+
+	// Path Intellisense kengaytmasi uchun maxsus yo‘l xaritalarini sozlash:
 	"path-intellisense.mappings": {
-		"/": "${workspaceFolder}",
-		"lib": "${workspaceFolder}/lib",
-		"global": "/Users/dummy/globalLibs"
+		"/": "${workspaceFolder}", // Ishchi papkaga nisbatan /
+		"lib": "${workspaceFolder}/lib", // "lib" papkasi ishchi joyga nisbatan
+		"global": "/Users/dummy/globalLibs" // Global kutubxonalar yo‘li
 	},
-
-	// Code Runner
-
+	// Code Runner kengaytmasining sozlamalari:
 	"code-runner.executorMap": {
-		"javascript": "node",
-		"php": "C:\\php\\php.exe",
-		"python": "python",
-		"perl": "perl",
-		"ruby": "C:\\Ruby23-x64\\bin\\ruby.exe",
-		"go": "go run",
-		"html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
-		"java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-		"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+		"python": "set PYTHONIOENCODING=utf8 && py -u", // Команда выполнения для Python с поддержкой русского языка
+		"powershell": "powershell -ExecutionPolicy ByPass -File", // Для запуска Windows PowerShell
+		// Har bir dasturlash tili uchun bajaruvchi sozlamalar:
+		"javascript": "node", // JavaScript uchun Node.js
+		"php": "C:\\php\\php.exe", // PHP uchun PHP bajaruvchi (Windows yo‘li)
+		"perl": "perl", // Perl uchun Perl bajaruvchi
+		"ruby": "C:\\Ruby23-x64\\bin\\ruby.exe", // Ruby uchun Ruby bajaruvchi (Windows yo‘li)
+		"go": "go run", // Go tilida bajarish
+		"html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"", // HTML fayllarini Chrome-da ochish
+		"java": "cd $dir && javac $fileName && java $fileNameWithoutExt", // Java faylini javac bilan kompilyatsiya qilish va ishga tushirish
+		"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt" // C fayllarini gcc bilan kompilyatsiya qilish va ishga tushirish
 	},
+
+	// Code Runner kengaytmasida glob shablonlari asosida bajaruvchi sozlamalar:
 	"code-runner.executorMapByGlob": {
-		"pom.xml": "cd $dir && mvn clean package",
-		"*.test.js": "tap",
-		"*.js": "node"
+		"pom.xml": "cd $dir && mvn clean package", // pom.xml fayli uchun Maven ishlatish
+		"*.test.js": "tap", // JavaScript testlari uchun tap ishlatish
+		"*.js": "node" // .js fayllarini Node.js bilan ishga tushirish
 	},
-	"code-runner.defaultLanguage": "javascript",
+
+	// Code Runner kengaytmasida standart tilni belgilash:
+	"code-runner.defaultLanguage": "javascript", // Standart til JavaScript
+
+	// .vbs (VBScript) fayllarini ishga tushirish:
 	"code-runner.executorMapByFileExtension": {
-		".vbs": "cscript //Nologo"
+		".vbs": "cscript //Nologo" // VBScript fayllarini cscript bilan ishga tushirish
 	},
-	"code-runner.customCommand": "echo Hello",
-	"code-runner.cwd": "path/to/working/directory",
-	"code-runner.clearPreviousOutput": false,
-	"code-runner.saveAllFilesBeforeRun": false,
-	"code-runner.saveFileBeforeRun": false,
-	"code-runner.showExecutionMessage": true,
-	"code-runner.runInTerminal": false,
-	"code-runner.preserveFocus": true,
-	"code-runner.enableAppInsights": false,
-	"google-translate.firstLanguage": "en",
-	"google-translate.secondLanguage": "ru",
 
-	//prettier
+	// Code Runner kengaytmasida maxsus buyruq:
+	"code-runner.customCommand": "echo Hello", // Custom buyruq (Hello xabarini chiqarish)
 
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	// Ishlaydigan katalogni belgilash:
+	"code-runner.cwd": "path/to/working/directory", // Ishlaydigan katalogni belgilash
+
+	// Code Runner chiqishini tozalash:
+	"code-runner.clearPreviousOutput": false, // Oldingi chiqishni tozalamaslik
+
+	// Fayllarni avtomatik saqlashdan oldin yoki keyin bajarish:
+	"code-runner.saveAllFilesBeforeRun": false, // Hammasini saqlashdan oldin bajarish emas
+	"code-runner.saveFileBeforeRun": false, // Faylni saqlashdan oldin bajarish emas
+
+	// Code Runner chiqish xabarini ko‘rsatish:
+	"code-runner.showExecutionMessage": true, // Ijro xabarini ko‘rsatish
+
+	// Code Runner kodni terminalda ishga tushirmaslik:
+	"code-runner.runInTerminal": false, // Terminalda ishga tushirmaslik
+
+	// Code Runner uchun fokusni saqlash:
+	"code-runner.preserveFocus": true, // Fokusni saqlash
+
+	// Code Runner kengaytmasida App Insights-ni o‘chirish:
+	"code-runner.enableAppInsights": false, // App Insights-ni o‘chirish
+
+	// Prettier formatlash sozlamalari:
+	"editor.defaultFormatter": "esbenp.prettier-vscode", // Standart formatlash vositasi sifatida Prettier
+	"editor.peekWidgetDefaultFocus": "editor", // Standart formatlash vositasi sifatida Prettier
+	"editor.formatOnType": true, // Formatlash so‘zlashda ishlatilsin
 	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.formatOnSave": true
+		"editor.defaultFormatter": "esbenp.prettier-vscode", // JavaScript fayllari uchun Prettier
+		"editor.formatOnSave": true // Saqlashda avtomatik formatlash
 	},
-	"prettier.resolveGlobalModules": true,
 
-	"prettier.bracketSpacing": true,
-	"prettier.semi": true,
-	"prettier.printWidth": 120,
-	"prettier.bracketSameLine": false,
+	// Prettier sozlamalari:
+	"prettier.resolveGlobalModules": true, // Global modullarni Prettier uchun yechishni faollashtirish
+	"prettier.bracketSpacing": true, // Yoyilgan qismlarda bo‘shliq qoldirish
+	"prettier.printWidth": 120, // Kod uzunligini 120 belgi bilan cheklash
+	"prettier.bracketSameLine": true, // Yoyilgan qismlar bir qatorda bo‘lmasligi
+	"prettier.embeddedLanguageFormatting": "auto", // Ichki tillarni avtomatik formatlash
 
-	"prettier.embeddedLanguageFormatting": "auto"
+	// Fayllarni avtomatik saqlash:
+	"files.autoSave": "afterDelay", // Saqlashni faollashtirish va kechikishdan keyin saqlash
+	"files.autoSaveDelay": 1, // Saqlash vaqtini 1 sekund bilan cheklash
+
+	// Fayl saqlanganda avtomatik ravishda formatlash (Prettier, ESLint va boshqalar bilan foydali)
+	"editor.formatOnSave": true, // optional
+
+	// Prettier uchun tab kengligi (2 probel)
+	"prettier.tabWidth": 2,
+
+	// Red Hat extension-larining foydalanuvchi ma'lumotlarini yuborishiga ruxsat (yoqilgan holatda)
+	"redhat.telemetry.enabled": true,
+
+	// VS Code notebook (Jupyter yoki boshqa) fayllarini saqlaganda avtomatik formatlash
+	"notebook.formatOnSave.enabled": true,
+
+	// CSS formatlash: qavslar yangi qatordan yoziladi
+	"css.format.braceStyle": "expand",
+
+	// CSS selektorlar orasidagi verguldan oldin/so‘ng probel qoldiriladi
+	"css.format.spaceAroundSelectorSeparator": true,
+
+	// ESLint orqali fayl formatlash imkonini yoqish
+	"eslint.format.enable": true,
+
+	// PHP formatlash: massivlar birinchi elementdan oldin yangi qatorga o‘tmasin
+	"php.format.rules.arrayInitializersNewLineBeforeFirstElement": false,
+	"prettier.proseWrap": "preserve",
+	"prettier.trailingComma": "all",
+	"prettier.endOfLine": "auto",
+	"files.trimTrailingWhitespace": true,
+	"files.trimFinalNewlines": true,
+	"files.insertFinalNewline": false,
+	"cSpell.language": "en,ru",
+	"breadcrumbs.showEnums": false,
+	"breadcrumbs.showInterfaces": false,
+
+	"breadcrumbs.showModules": false,
+	"breadcrumbs.showNamespaces": false,
+	"breadcrumbs.showNull": false,
+	"breadcrumbs.showNumbers": false,
+	"breadcrumbs.showObjects": false,
+	"breadcrumbs.showOperators": false,
+	"breadcrumbs.showPackages": false,
+	"breadcrumbs.showProperties": false,
+	"breadcrumbs.showStrings": false,
+	"breadcrumbs.showStructs": false,
+	"breadcrumbs.showTypeParameters": false,
+	"breadcrumbs.showVariables": false,
+
+	// "editor.minimap.renderCharacters": false,
+	// "editor.minimap.enabled": false,
+	"editor.padding.top": 20, // отступ сверху кода
+	"http.proxySupport": "fallback",
+	"[python]": {
+		"editor.formatOnType": true // Форматирование кода при вводе для языка Python
+	},
+	"editor.accessibilityPageSize": 12, // Размер страницы доступности редактора
+	"editor.hover.delay": 1500, // Задержка при отображении всплывающей подсказки
+	"editor.letterSpacing": 0.3, // Межбуквенное расстояниеВключение масштабирования колесиком мыши
+	"scm.inputFontSize": 14, // Размер шрифта для ввода в системе контроля версий
+	"editor.scrollbar.horizontalScrollbarSize": 14, // Размер горизонтальной полосы прокрутки
+	"files.trimTrailingWhitespaceInRegexAndStrings": true, // Удаление пробелов в конце строки,
+	"files.saveConflictResolution": "askUser",
+	// "editor.minimap.enabled": false, // Отключение миникарты
+	"editor.autoClosingBrackets": "always" //Qavslar avtomatik yopilishini boshqaradi
 }
