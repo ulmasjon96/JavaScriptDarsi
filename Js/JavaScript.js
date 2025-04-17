@@ -761,7 +761,7 @@
 
 // person.greet() // Outputs: Hello, I'm Alice
 
-// console.dir(document);
+// console.dir(document);=> 
 
 // const body = document.children[0].children[1];
 // body.className = 'tana';
@@ -806,7 +806,3 @@
 
 // sarlavha.style.fontSize = '25px';
 // sarlavha.style.color = 'blue';
-
-
-
-

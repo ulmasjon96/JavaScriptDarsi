@@ -66,10 +66,6 @@
 	// Kiritishlarni yashirish va qaysi kod bloklarini o‘zgartirish uchun qatorlarni bükme (folding):
 	"editor.folding": true,
 
-	// Avtomatik indentatsiyani aniqlash:
-	// true — avtomatik indentatsiya qo‘llaniladi
-	"editor.detectIndentation": true,
-
 	// Kod takliflarida tanlashni boshida (birinchi) variantga olib borish:
 	"editor.suggestSelection": "first",
 
@@ -207,7 +203,7 @@
 	// "explicit" — importlarni aniq ravishda tartibga solish (automatik importlarni o‘zgartirish)
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit",
-		"source.fixAll": true
+		"source.fixAll": "always"
 	},
 
 	// Prettier-da arrow qavslarini o‘rganishda ularni kamroq ishlatish:
@@ -461,7 +457,6 @@
 
 	// Editorning tab va sozlamalari:
 	"editor.tabSize": 2, // Tab kengligini 2 qilib belgilash
-	"editor.insertSpaces": false, // Tablar o‘rniga bo‘sh joylar qo‘shishni o‘chirish
 	"editor.smoothScrolling": true, // Silliq skrollingni yoqish
 	"workbench.list.smoothScrolling": true, // Ish joyidagi ro‘yxatlar uchun ham silliq skrollingni yoqish
 	"terminal.integrated.smoothScrolling": true, // Terminalda silliq skrollingni yoqish
@@ -715,13 +710,400 @@
 	"[python]": {
 		"editor.formatOnType": true // Форматирование кода при вводе для языка Python
 	},
-	"editor.accessibilityPageSize": 12, // Размер страницы доступности редактора
+	// "editor.accessibilityPageSize": 12, // Размер страницы доступности редактора
 	"editor.hover.delay": 1500, // Задержка при отображении всплывающей подсказки
-	"editor.letterSpacing": 0.3, // Межбуквенное расстояниеВключение масштабирования колесиком мыши
 	"scm.inputFontSize": 14, // Размер шрифта для ввода в системе контроля версий
 	"editor.scrollbar.horizontalScrollbarSize": 14, // Размер горизонтальной полосы прокрутки
 	"files.trimTrailingWhitespaceInRegexAndStrings": true, // Удаление пробелов в конце строки,
 	"files.saveConflictResolution": "askUser",
 	// "editor.minimap.enabled": false, // Отключение миникарты
-	"editor.autoClosingBrackets": "always" //Qavslar avtomatik yopilishini boshqaradi
+	"editor.autoClosingBrackets": "always", //Qavslar avtomatik yopilishini boshqaradi
+
+	// Tavsiyalarni kiritish rejasi
+	// - insert: Kursor o'ng tomonidagi matnni o'zgartirmasdan tavsiyani kiritadi
+	// - replace: Kursor o'ng tomonidagi matnni o'zgartirib tavsiyani kiritadi
+	"editor.suggest.insertMode": "insert",
+
+	// Tavsiyalarni kursorga yaqin joyda saralashni yoqish
+	"editor.suggest.localityBonus": false, // Bu sozlama kursorga yaqin joylarda tavsiyalarni ko'rsatishni faollashtiradi
+
+	// IntelliSense faollashganda, faqat so'zning boshlanishidagi harfga mos keladigan tavsiyalar ko'rsatiladi
+	"editor.suggest.matchOnWordStartOnly": true,
+
+	// Tavsiyaning natijasini oldindan ko'rish imkoniyatini o'chirish
+	"editor.suggest.preview": false,
+
+	// Tavsiyalarni tanlash rejimi
+	// - always: Har doim avtomatik tavsiya tanlanadi
+	// - never: Hech qachon avtomatik tavsiya tanlanmaydi
+	// - whenTriggerCharacter: Faoliyat faqat trigger belgisidan so'ng tanlanadi
+	"editor.suggest.selectionMode": "always",
+
+	// Tavsiyalarni bir nechta ish joylari va oynalar bilan ulashishni yoqish
+	"editor.suggest.shareSuggestSelections": false,
+
+	// IntelliSense tavsiyalarini ko'rsatish turli xil turlarda:
+	// - klasslar, ranglar, doimiy qiymatlar, funksiyalar, va boshqalar
+	"editor.suggest.showClasses": true, // Klass tavsiyalari
+	"editor.suggest.showColors": true, // Rang tavsiyalari
+	"editor.suggest.showConstants": true, // Doimiy qiymat tavsiyalari
+	"editor.suggest.showConstructors": true, // Konstruktor tavsiyalari
+	"editor.suggest.showCustomcolors": true, // Maxsus ranglar tavsiyalari
+	"editor.suggest.showDeprecated": true, // Eskirgan funksiyalar tavsiyalari
+	"editor.suggest.showEnumMembers": true, // Enum a'zolari tavsiyalari
+	"editor.suggest.showEnums": true, // Enum tavsiyalari
+	"editor.suggest.showEvents": true, // Hodisalar tavsiyalari
+	"editor.suggest.showFields": true, // Maydonlar tavsiyalari
+	"editor.suggest.showFiles": true, // Fayllar tavsiyalari
+	"editor.suggest.showFolders": true, // Papkalar tavsiyalari
+	"editor.suggest.showFunctions": true, // Funksiyalar tavsiyalari
+	"editor.suggest.showInterfaces": true, // Interfeyslarga oid tavsiyalar
+	"editor.suggest.showKeywords": true, // Kalit so'zlar tavsiyalari
+	"editor.suggest.showMethods": true, // Metodlar tavsiyalari
+	"editor.suggest.showModules": true, // Modullar tavsiyalari
+	"editor.suggest.showOperators": true, // Operatorlar tavsiyalari
+	"editor.suggest.showProperties": true, // Xususiyatlar tavsiyalari
+	"editor.suggest.showReferences": true, // Referensiyalar tavsiyalari
+	"editor.suggest.showSnippets": true, // Snippet tavsiyalari
+	"editor.suggest.showStructs": true, // Strukturalar tavsiyalari
+	"editor.suggest.showTypeParameters": true, // Tip parametrlar tavsiyalari
+	"editor.suggest.showUnits": true, // Birliklar tavsiyalari
+	"editor.suggest.showUsers": true, // Foydalanuvchilar tavsiyalari
+	"editor.suggest.showValues": true, // Qiymatlar tavsiyalari
+	"editor.suggest.showVariables": true, // O'zgaruvchilar tavsiyalari
+	"editor.suggest.showWords": true, // So'zlar tavsiyalari
+
+	// Snippet'lar tez tavsiyalarni to'xtatmasligini ta'minlash
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+
+	// Tavsiyalar vidjeti uchun shrift o'lchami
+	// 0 bo'lsa, editor.fontSize qiymati ishlatiladi
+	"editor.suggestFontSize": 0,
+
+	// Tavsiyalar vidjeti uchun qator balandligi
+	// 0 bo'lsa, editor.lineHeight qiymati ishlatiladi
+	"editor.suggestLineHeight": 0,
+
+	// Tavsiyalarni trigger xarakterlari kiritilganda avtomatik ko'rsatish
+	"editor.suggestOnTriggerCharacters": true,
+
+	// Tab tugmasi bilan avtomatik to'ldirishni o'chirish
+	"editor.tabCompletion": "off",
+
+	// Tablar faqat tab fokus rejimida ishlatilishi
+	"editor.tabFocusMode": false,
+
+	// Kiritilgan matnni avtomatik bo'sh joylarni olib tashlash
+	"editor.trimAutoWhitespace": true,
+
+	// Qator bo'linishidagi belgilarning o'zgarishini oldini olish
+	"editor.unfoldOnClickAfterEndOfLine": false,
+
+	// Tahrirda bo'sh joylarni ajratib, o'qish uchun optimallashtirish
+	"editor.useTabStops": true,
+
+	// So'z bilan ishlov berishda qo'llaniladigan ajratish belgilarini sozlash
+	"editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+
+	// Qatorlar o'ralishi uchun maksimal kolonni sozlash
+	"editor.wordWrapColumn": 80,
+
+	// Qator bo'linish nuqtalarini hisoblash uchun algoritmni tanlash
+	"editor.wrappingStrategy": "simple", // Oddiy bo'linish, barcha belgilar teng kenglikda deb faraz qiladi
+
+	// Tizim yozishda tezkor tavsiyalarni avtomatik ko'rsatishni boshqaradi.
+	"editor.quickSuggestions": {
+		"other": "on", // Boshqa turdagi tavsiyalar (masalan, funksiyalar) ko'rsatiladi
+		"comments": "off", // Kommentariyalar uchun tavsiyalarni o'chirish
+		"strings": "off" // Stringlar ichidagi tavsiyalarni o'chirish
+	},
+
+	// Qayta nomlashdan oldin o'zgarishlarni oldindan ko'rish imkoniyatini yoqish.
+	"editor.rename.enablePreview": true,
+
+	// Fayl oxirida yangi qator bo'lsa, oxirgi qatorni ko'rsatish.
+	"editor.renderFinalNewline": "on", // Bu sozlama yangi qatorni oxiriga qo'shishni ta'minlaydi.
+
+	// Joriy qatorni ta'kidlashning qanday ko'rsatilishini boshqaradi.
+	"editor.renderLineHighlight": "line", // Faqat joriy qatorni ta'kidlash
+
+	// Faqat tahrirlagichga diqqat qaratilganda joriy qatorni ta'kidlash.
+	"editor.renderLineHighlightOnlyWhenFocus": false,
+
+	// Bo'sh joy belgilarini qanday ko'rsatishni boshqaradi.
+	// - none: Hech qanday bo'sh joyni ko'rsatmaydi
+	// - boundary: Faqat so'zlar orasidagi bo'sh joyni ko'rsatadi
+	// - selection: Faqat tanlangan matnni ko'rsatadi
+	// - trailing: Faqat oxirgi bo'sh joylarni ko'rsatadi
+	// - all: Hamma bo'sh joylarni ko'rsatadi
+	"editor.renderWhitespace": "selection",
+
+	// Seçimlarni yumaloq burchaklar bilan ko'rsatishni boshqaradi.
+	"editor.roundedSelection": true,
+
+	// Vaqti-vaqti bilan qo'llaniladigan vertikal chiziqlar uchun qoidalarga ko'ra chiziqlarni belgilash.
+	"editor.rulers": [],
+
+	// Inline tavsiyalar ekran o'quvchisiga bildirilishini boshqaradi.
+	"editor.screenReaderAnnounceInlineSuggestion": true,
+
+	// Gorizontal scrollbar kontent balandligini oshirishga ta'sir qilmasligini sozlash.
+	"editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": false,
+
+	// Poytaxtdagi tasvirlarni faqat bir sahifada ko'rsatish yoki to'liq joyga ko'chish.
+	"editor.scrollbar.scrollByPage": false,
+
+	// Vertikal scrollbarning kengligi.
+	"editor.scrollbar.verticalScrollbarSize": 14,
+
+	// So'nggi qatorning o'zidan keyin yana bir nechta belgilangan belgilarni ko'rsatish.
+	"editor.scrollBeyondLastColumn": 4,
+
+	// Linux uchun asosiy clipboardni qo'llab-quvvatlashni boshqaradi.
+	"editor.selectionClipboard": true,
+
+	// Agar vertikal va gorizontal scroll bir vaqtda bo'lsa, qaysi o'qish ustunligini boshqaradi.
+	"editor.scrollPredominantAxis": true,
+
+	// Tanlangan matnni o'xshashligini ko'rsatish imkoniyatini yoqadi.
+	"editor.selectionHighlight": true,
+
+	// Semantik ta'kidlashni boshqaradi (tilga qarab).
+	"editor.semanticHighlighting.enabled": "configuredByTheme", // Rang mavzusiga qarab sozlanadi.
+
+	// Semantik token ranglari va uslublarini rang mavzusidan ajratib, sozlash.
+	"editor.semanticTokenColorCustomizations": {},
+
+	// Eskirgan o'zgaruvchilarni chizish.
+	"editor.showDeprecated": true,
+
+	// Qisqacha kodni saqlash jarayonida qaysi qoidalarga ko'ra ko'rsatishni boshqaradi.
+	"editor.showFoldingControls": "mouseover", // Faqat sichqoncha o'ngga kelsa ko'rsatiladi.
+
+	// Ishlatilmagan kodni so'nish holatini boshqaradi.
+	"editor.showUnused": true,
+
+	// Kiritilgan matnda bo'sh joylar va boshqa kichik belgilarni tanlash imkoniyatini boshqaradi.
+	"editor.smartSelect.selectLeadingAndTrailingWhitespace": true, // Yangi bo'sh joylar tanlanadi.
+
+	// Subso'zlarni (masalan, 'foo' ni 'fooBar' ichidan) tanlash imkoniyatini boshqaradi.
+	"editor.smartSelect.selectSubwords": true,
+
+	// Kod harakatlarini va harakatlarni o'zgartirish uchun kodlar tahririni boshqaradi.
+	"editor.snippets.codeActions.enabled": true,
+
+	// Snippet'larni qanday ko'rsatish va ularni qanday saralashni boshqaradi.
+	"editor.snippetSuggestions": "inline", // Snippet'lar boshqa tavsiyalar bilan birga ko'rsatiladi.
+
+	// Peek editor oynalari ularning mazmuniga ikki marta bosganda yoki `Escape` tugmasini bosganda ochiq qolishini ta'minlash.
+	"editor.stablePeek": false,
+
+	// Tahrirlagichni yopib qo'ymasdan, kerakli joyni saqlab turishning ko'rsatilgan modelini sozlash.
+	"editor.stickyScroll.defaultModel": "outlineModel",
+
+	// Sticky Scroll da ko'rsatiladigan maksimal qatorlar sonini belgilaydi.
+	"editor.stickyScroll.maxLineCount": 5,
+
+	// Sticky Scroll'ni tahrirlagichning gorizontal scroll bilan birga ishlashini sozlash.
+	"editor.stickyScroll.scrollWithEditor": true,
+
+	// Tablar bilan ajratilgan bo'sh joylar to'g'risida tanlashni boshqaradi.
+	"editor.stickyTabStops": false,
+
+	// Filtrlanadigan va saralanadigan tavsiyalar kichik xatolarga qarshi bo'lishini boshqaradi.
+	"editor.suggest.filterGraceful": true,
+
+	// Kattaroq tavsiyalar yonma-yon ko'rsatilishi mumkinmi yoki yo'qligini boshqaradi.
+	// - auto: Agar joy bo'lsa, kattaroq tavsiyalar yonma-yon ko'rsatiladi, aks holda ular pastda ko'rsatiladi.
+	// - never: Kattaroq tavsiyalar hech qachon yonma-yon ko'rsatilmaydi va doimo pastda ko'rsatiladi.
+	"editor.inlineSuggest.edits.renderSideBySide": "auto",
+
+	// Tavsiya ko'rsatilganda u dastlab yashirilgan holda bo'ladimi yoki yo'qligini boshqaradi.
+	"editor.inlineSuggest.edits.showCollapsed": false,
+
+	// Inline tavsiyalar uchun shrift oilasini boshqaradi.
+	"editor.inlineSuggest.fontFamily": "default",
+
+	// Inline tavsiyalar panelini qachon ko'rsatishni boshqaradi.
+	// - always: Inline tavsiyalar paneli har doim ko'rsatiladi.
+	// - onHover: Faqat sichqoncha ustiga keltirilganda ko'rsatiladi.
+	// - never: Hech qachon ko'rsatilmaydi.
+	"editor.inlineSuggest.showToolbar": "onHover",
+
+	// Tahrirlagichda inline tavsiyalar uchun sintaksis ta'kidlashni ko'rsatishni boshqaradi.
+	"editor.inlineSuggest.syntaxHighlightingEnabled": true,
+
+	// `Tab` tugmasini bosganda bo'sh joylar qo'shilishini boshqaradi. `editor.detectIndentation` yoqilgan bo'lsa, fayl mazmuniga qarab bu sozlama o'zgaradi.
+	"editor.insertSpaces": true,
+	"editor.detectIndentation": true,
+
+	// Qavslarning tahrirni oshiruvchi yoki kamaytiruvchi belgilari.
+	"editor.language.brackets": null,
+
+	// Qavs juftliklarini ranglashni yoqish, agar qavs juftligini ranglash qo'llab-quvvatlansa.
+	"editor.language.colorizedBracketPairs": null,
+
+	// Katta fayllar uchun xotira talab qiladigan ba'zi funksiyalarni o'chirishni boshqaradi.
+	"editor.largeFileOptimizations": true,
+
+	// Harflar orasidagi bo'shliqni boshqaradi (piksel).
+	"editor.letterSpacing": 0.4,
+
+	// Tahrirlagichda kod harakatlarini ko'rsatishni yoqish (yengil lampochka).
+	// - off: Kod harakati menyusini o'chirish.
+	// - onCode: Koddagi qatorda kursor turganda ko'rsatish.
+	// - on: Kod yoki bo'sh qatorda kursor turganda ko'rsatish.
+	"editor.lightbulb.enabled": "onCode",
+
+	// Qator raqamlarini ko'rsatishni boshqaradi.
+	// - off: Qator raqamlarini ko'rsatmaydi.
+	// - on: To'liq raqamlarni ko'rsatadi.
+	// - relative: Kursor joylashuviga nisbatan raqamlarni ko'rsatadi.
+	// - interval: Har 10 qatorda bir marta raqamlarni ko'rsatadi.
+	"editor.lineNumbers": "on",
+
+	// Tahrirlagichda havolalarni aniqlash va ularni bosish mumkinligini boshqaradi.
+	"editor.links": true,
+
+	// Mos keladigan qavslarni ta'kidlashni boshqaradi.
+	"editor.matchBrackets": "always",
+
+	// Belgilangan uzunlikdan oshgan qatordagi matnni tokenizatsiya qilishni o'chirish.
+	"editor.maxTokenizationLineLength": 20000,
+
+	// Minimap avtomatik yashirilishini boshqaradi.
+	"editor.minimap.autohide": false,
+
+	// Minimap ko'rsatilishini boshqaradi.
+	"editor.minimap.enabled": true,
+
+	// Kommentariyalar ichidagi bo'lim sarlavhalarini aniqlash uchun ishlatiladigan muntazam ifoda.
+	"editor.minimap.markSectionHeaderRegex": "\\bMARK:\\s*(?<separator>-?)\\s*(?<label>.*)$",
+
+	// Minimapning kengligini cheklash.
+	"editor.minimap.maxColumn": 120,
+
+	// Minimapda qatorning haqiqiy belgilarini ko'rsatish.
+	"editor.minimap.renderCharacters": true,
+
+	// Minimapdagi kontentning masshtabini boshqarish: 1, 2 yoki 3.
+	"editor.minimap.scale": 1,
+
+	// Minimapdagi bo'lim sarlavhalarining shrift o'lchamini boshqaradi.
+	"editor.minimap.sectionHeaderFontSize": 9,
+
+	// Minimapdagi bo'lim sarlavhalaridagi harflar orasidagi bo'shliqni boshqaradi.
+	"editor.minimap.sectionHeaderLetterSpacing": 1,
+
+	// Minimapda `MARK:` kommentariyalarini bo'lim sarlavhalari sifatida ko'rsatish.
+	"editor.minimap.showMarkSectionHeaders": true,
+
+	// Minimapda nomlangan hududlarni bo'lim sarlavhalari sifatida ko'rsatish.
+	"editor.minimap.showRegionSectionHeaders": true,
+
+	// Minimapning slayderi qachon ko'rsatilishini boshqaradi.
+	"editor.minimap.showSlider": "mouseover",
+
+	// Minimapni qaysi tomonida ko'rsatish.
+	"editor.minimap.side": "right",
+
+	// Minimapning o'lchamini boshqaradi.
+	// - proportional: Minimap tahrirlagichning o'lchami bilan bir xil o'lchamda bo'ladi (va ehtimol, aylantirish imkoniyati bo'ladi).
+	// - fill: Minimap tahrirlagichning balandligiga to'liq to'ldiriladi (aylantirish yo'q).
+	// - fit: Minimap tahrirlagichdan katta bo'lmasligi uchun moslashadi (aylantirish yo'q).
+	"editor.minimap.size": "proportional",
+
+	// Sichqoncha bilan aylantirishda `deltaX` va `deltaY` uchun sezgirlik koeffitsientini boshqaradi.
+	"editor.mouseWheelScrollSensitivity": 1,
+
+	// Tahrirlagichda faollashgan kursorlar sonini cheklash.
+	"editor.multiCursorLimit": 10000,
+
+	// Bir-birini qoplagan kursorlarni birlashtirish.
+	"editor.multiCursorMergeOverlapping": true,
+
+	// Kursorlar soni bir xil bo'lsa, qaysi kursorni qo'llashni boshqaradi.
+	// - spread: Har bir kursor faqat bir qatorni qo'yadi.
+	// - full: Har bir kursor to'liq matnni qo'yadi.
+	"editor.multiCursorPaste": "spread",
+
+	// Boshqa ochiq fayllarda ham mos keladigan joylarni ta'kidlashni boshqaradi.
+	// - off: Boshqa fayllarda joylar ta'kidlanmaydi.
+	// - singleFile: Faqat joriy faylda joylar ta'kidlanadi.
+	// - multiFile: Eksperimental: Barcha ochiq fayllarda joylar ta'kidlanadi.
+	"editor.occurrencesHighlight": "singleFile",
+
+	// Joylar ta'kidlanganidan keyin qaysi kechikish bilan ta'kidlanishini boshqaradi.
+	"editor.occurrencesHighlightDelay": 0,
+
+	// Kursorning ko'rinishini tahrir rejimida boshqaradi.
+	"editor.overtypeCursorStyle": "block",
+
+	// Pastdagi matnni qo'shishda o'zgartirishning tahrirlanishini boshqaradi.
+	"editor.overtypeOnPaste": true,
+
+	// Overview ruler atrofida chegaraning chizilishi.
+	"editor.overviewRulerBorder": true,
+
+	// Tahrirlagichning pastki qirqi bilan oxirgi qatordagi bo'shliqni boshqaradi.
+	"editor.padding.bottom": 30,
+
+	// Kod yozayotganda tavsiyalarni ba'zi belgilar (masalan, ;) orqali tanlashga ruxsat beradi
+	"editor.acceptSuggestionOnCommitCharacter": true,
+
+	// Enter tugmasi bilan tavsiyalarni tanlashni boshqaradi
+	// "on" — doim ruxsat beradi, "smart" — faqat matnda haqiqiy o‘zgarish bo‘lsa tanlanadi
+	"editor.acceptSuggestionOnEnter": "on",
+
+	// Ekran o‘quvchilar (screen reader) uchun bir vaqtda nechta qatordan foydalanish mumkinligini belgilaydi
+	"editor.accessibilityPageSize": 500,
+
+	// Izohlar (kommentariyalar) avtomatik yopilishi
+	"editor.autoClosingComments": "languageDefined",
+
+	// Avtomatik kiritilgan yopuvchi belgilarni o‘chirishga ruxsat
+	"editor.autoClosingDelete": "auto",
+
+	// Avtomatik kiritilgan yopuvchi belgilar ustiga yozishga ruxsat
+	"editor.autoClosingOvertype": "auto",
+
+	// Qavslar kabi, qo‘shtirnoqlar ham avtomatik yopiladimi — shuni boshqaradi
+	"editor.autoClosingQuotes": "languageDefined",
+
+	// Kod yozayotganda avtomatik identatsiya (bo‘sh joylar bilan moslash) darajasini belgilaydi
+	"editor.autoIndent": "full",
+
+	// Belgilar oralig‘ida avtomatik ravishda qamrab olishni yoqish (qo‘shtirnoq yoki qavs)
+	"editor.autoSurround": "languageDefined",
+
+	// Kod ustida kichik ma’lumotlar ko‘rsatish (CodeLens)
+	"editor.codeLens": true,
+
+	// Ranglar ishlatilgan joylarda rang tanlash oynasini ko‘rsatish
+	"editor.colorDecorators": true,
+
+	// Rang tanlovchi (color picker) qanday holatda paydo bo‘ladi
+	"editor.colorDecoratorsActivatedOn": "clickAndHover",
+
+	// Kommentariyalarda bo‘sh satrlar e’tiborga olinsinmi
+	"editor.comments.ignoreEmptyLines": true,
+
+	// Kommentariya qo‘shilganda bo‘sh joy kiritilsinmi
+	"editor.comments.insertSpace": true,
+
+	// Kodni buklash (folding) imkoniyati — uzoq kodni qisqartirish
+	"editor.foldingHighlight": true,
+
+	// Bracket chiziqli yo‘riqnomalar ko‘rsatilsinmi
+	"editor.guides.highlightActiveBracketPair": true,
+
+	// Tavsiyalarni kiritishda ishlatiladigan imkoniyatlar (inlay hints)
+	"editor.inlayHints.enabled": "on",
+
+	// Kodda bracketlar, importlar, funksiyalarni avtomatik aniqlash va Collapse qilish
+	"editor.foldingImportsByDefault": false,
+
+	// Hover — sichqoncha bilan ustiga olib borilganda chiqadigan info oynalar
+	"editor.hover.enabled": true,
+	"editor.hover.sticky": true
 }
