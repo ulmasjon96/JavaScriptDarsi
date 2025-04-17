@@ -760,3 +760,53 @@
 // }
 
 // person.greet() // Outputs: Hello, I'm Alice
+
+// console.dir(document);
+
+// const body = document.children[0].children[1];
+// body.className = 'tana';
+// console.dir(body.className);
+// const myTitle = document.body.children[0].children[0].children[0];
+
+// myTitle.style.color = 'gold';
+// myTitle.style.fontSize = '50px';
+
+// const talabalar = [
+// 	"O'lmas",
+// 	"Boboxo'ja",
+// 	'Abdukarim',
+// 	'Kamol',
+// 	'Firdavs',
+// 	'aziz',
+// 	'javohir',
+// 	'Abdulaziz',
+// 	'Muhammadali',
+// 	'Marjona',
+// 	'Tahmina',
+// 	'Shahlo',
+// 	'Amirshox',
+// 	'Javohir',
+// 	'Kamron',
+// 	'Mirsaid',
+// 	'Muhammadmirzo',
+// ];
+
+// const randomTalaba = talabalar[Math.floor(Math.random() * talabalar.length)];
+
+// myTitle.textContent = 'Xush kelibsiz ' + randomTalaba;
+
+// console.dir(myTitle);
+
+// const paragraf = document.body.children[1].children[0].children[0].children[1];
+
+// paragraf.style.color = 'green';
+// paragraf.style.fontSize = '20px';
+
+// const sarlavha = document.body.children[1].children[0].children[0].children[0];
+
+// sarlavha.style.fontSize = '25px';
+// sarlavha.style.color = 'blue';
+
+
+
+
