@@ -114,7 +114,7 @@
 	// Token ranglari va font stilini sozlash:
 	"editor.tokenColorCustomizations": {
 		// Kommentlar uchun rangni belgilash (yashil rang)
-		"comments": "#00ff08bd",
+		"comments": "#00ff08b0",
 
 		// TextMate qoidalari bo‘yicha rang va font stilini sozlash
 		"textMateRules": [
