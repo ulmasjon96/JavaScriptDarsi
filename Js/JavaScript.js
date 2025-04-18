@@ -761,7 +761,7 @@
 
 // person.greet() // Outputs: Hello, I'm Alice
 
-// console.dir(document);=> 
+// console.dir(document);=>
 
 // const body = document.children[0].children[1];
 // body.className = 'tana';
@@ -806,3 +806,149 @@
 
 // sarlavha.style.fontSize = '25px';
 // sarlavha.style.color = 'blue';
+
+// const talabalar = {
+//   name: "O'lmas",
+//   age: 20,
+//   isStudent: true,
+//   friends: ["Boboxo'ja", "Abdukarim", "Kamol", "Firdavs"],
+
+// }
+
+// // Mahsulotlar ro'yxati: har bir obyekt mahsulot nomi, narxi va statusini o'z ichiga oladi
+// let magazin = [
+//   { name: 'PAMIDOR', narxi: 15, status: true },
+//   { name: 'KARTOSHKA', narxi: 8, status: false },
+//   { name: 'SABZI', narxi: 10, status: true },
+// ];
+
+// // Har bir mahsulotni alohida ko'rib chiqamiz
+// for (let i of magazin) {
+//   // Agar mahsulot statusi true bo'lsa (ya'ni mavjud bo'lsa)
+//   if (i.status === true) {
+//     console.log(i.name); // Mahsulot nomini chiqaramiz
+//   } else {
+//     // Aks holda, ya'ni status false bo'lsa
+//     console.log("to'g'ri ma'lumotlar mavjud emas"); // Xabar chiqaramiz
+//   }
+// }
+
+// let products = [
+//     {name:'apple',narxi:500,status:true},
+//     {name:'limon',narxi:200,status:false},
+//     {name:'kivi',narxi:700,status:true}
+// ]
+
+// for(let i of products){
+//     if(i.status==true){
+//         console.log(i.name);
+
+//     }
+// }
+
+// function CreateOb(marka,model,yili){
+//     let car = {
+//         marka:marka,
+//         model:model,
+//         yili:yili
+
+//     }
+//     console.log(car)
+// }
+
+// CreateOb(prompt('marka: '),prompt('model: '),prompt('yili: '))
+
+// const kalit so‘zi bilan o‘zgarmas (doimiy) o‘zgaruvchi yaratilmoqda
+
+// // O'zgaruvchi uchun qiymat berildi
+// const teacher = {
+// 	// Obyektning "ism" degan xususiyati. Qiymati: 'Ali'
+// 	ism: 'Ali',
+
+// 	// "fan" degan xususiyat. Qiymati: 'Matematika'
+// 	fan: 'Matematika',
+
+// 	// greet — bu obyekt ichidagi funksiya (metod)
+// 	greet: function () {
+// 		// Konsolga salomlashish matni chiqariladi this.ism -> 'Ali', this.fan -> 'Matematika'
+// 		console.log(`Salom, men ${this.ism}, ${this.fan} fanidan dars beraman`);
+// 	},
+// };
+
+// // Bu yerda greet funksiyasi chaqirilmoqda, va u salomlashuvchi matnni konsolga chiqaradi
+// teacher.greet();
+
+
+// O'rtacha bahoni hisoblash funksiyasi
+const student = {
+	// Student (talaba) obyektiga 'grades' nomli massiv (array) berilgan
+	grades: [90, 85, 95, 88, 92],
+
+	// 'averageGrade' — bu metod (funksiya) bo‘lib, o‘rtacha bahoni hisoblaydi
+	urtachaBahoni: function () {
+		// reduce yordamida barcha baholar yig‘indisi hisoblanadi
+		const sum = this.grades.reduce((a, b) => a + b, 0);
+
+		// Yig‘indini baholar soniga bo‘lib, o‘rtacha bahoni qaytaradi
+		return sum / this.grades.length;
+	},
+};
+
+// Konsolga o‘rtacha bahoni chiqaradi
+console.log(student.urtachaBahoni());
+
+//
+
+
+// const student = {
+//   grades: [], // Baholarni saqlash uchun bo‘sh massiv
+
+//   // Tasodifiy baholar hosil qiluvchi funksiya
+//   generateRandomGrades: function (count = 5) {
+//     this.grades = []; // Avval massivni tozalaymiz
+//     for (let i = 0; i < count; i++) {
+//       const randomGrade = Math.floor(Math.random() * 101); // 0–100 oralig‘ida random baho
+//       this.grades.push(randomGrade); // Massivga qo‘shamiz
+//     }
+//   },
+
+//   // O‘rtacha bahoni hisoblaydigan funksiya
+//   averageGrade: function () {
+//     const sum = this.grades.reduce((a, b) => a + b, 0); // Barcha baholar yig‘indisi
+//     return sum / this.grades.length; // O‘rtacha qiymat
+//   }
+// };
+
+// // 👉 Bu qism obyekt tashqarisida bo‘lishi kerak
+// student.generateRandomGrades(); // Random baholar hosil qilamiz
+// console.log("Baholar:", student.grades); // Baholarni chiqaramiz
+// console.log("O‘rtacha baho:", student.averageGrade()); // O‘rtacha bahoni chiqaramiz
+
+/* Siz kiritgan kod student nomli obyektni yaratadi va unga grades nomli massiv va urtachaBahoni nomli metodni qo'shadi. Ushbu metod talabaning baholarining o'rtacha qiymatini hisoblaydi.
+
+Mana qanday ishlaydi:
+
+grades massivida talabaning baholari saqlanadi: [90, 85, 95, 88, 92].
+
+urtachaBahoni metodida reduce funksiyasi ishlatiladi:
+
+reduce() yordamida barcha baholar yig'indisi hisoblanadi. a (yig'uvchi) va b (hozirgi baho) parametrlar orqali barcha baholar qo'shiladi.
+
+Yig'indi hisoblangandan so'ng, bu yig'indini this.grades.length (baholar soni) ga bo'lib, o'rtacha baho hisoblanadi.
+
+console.log(student.urtachaBahoni()) bu metodni chaqiradi va konsolga o'rtacha bahoni chiqaradi.
+
+Misol uchun:
+
+Baholar: [90, 85, 95, 88, 92]
+
+Yig'indi: 90 + 85 + 95 + 88 + 92 = 450
+
+O'rtacha baho: 450 / 5 = 90
+
+Natija: 90 bo'ladi.
+
+Kodning ishlashi to'g'ri va har qanday xatolik yo'q. Bu kod o'rtacha bahoni hisoblash uchun mukammal yechim. */
+
+
+
